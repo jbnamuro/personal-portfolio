@@ -3,6 +3,8 @@ import Header from "./components/Header";
 import Landing from "./components/Landing";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Offers from "./components/Offers";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -11,6 +13,8 @@ const App = () => {
       <Landing />
       <Projects />
       <About />
+      <Offers />
+      <Footer />
     </>
   );
 };

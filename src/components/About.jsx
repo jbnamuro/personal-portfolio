@@ -15,9 +15,10 @@ const About = () => {
           stagger: 0.1,
           scrollTrigger: {
             trigger: ".abt",
-            start: "top 80%",
+            start: "top 60%",
             scrub: 1,
-            end: "bottom 80%",
+            end: "top top",
+            // markers: true,
           },
         });
       },

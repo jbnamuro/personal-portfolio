@@ -16,13 +16,25 @@ const Landing = () => {
           scrub: true,
         },
       });
+      gsap.to(".landing-cont", {
+        scrollTrigger: {
+          trigger: ".landing-cont",
+          start: "top top",
+          endTrigger: ".project-wrapper",
+          end: "top top",
+          // markers: "true",
+          scrub: true,
+          pin: true,
+          pinSpacing: false,
+        },
+      });
     },
     { scope: homeRef.current }
   );
   return (
     <div
       ref={homeRef}
-      className="landing-cont flex flex-col justify-center items-center top-0 left-0 h-screen fixed -z-1 w-full"
+      className="landing-cont flex flex-col justify-center items-center top-0 left-0 h-screen -z-1 w-full"
     >
       <div className="w-full h-full bg-[url(/background.jpg)] bg-cover bg-no-repeat absolute top-0 left-0 -z-1 opacity-50"></div>
       <div className="bg-white text-[3.5vw]/[3.5vw] md:text-2xl p-4 aspect-5/6  max-h-100 max-w-200 flex font-light flex-col justify-between w-[75%] text-black">

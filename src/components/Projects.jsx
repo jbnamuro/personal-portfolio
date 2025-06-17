@@ -12,12 +12,12 @@ const Projects = () => {
         start: "top top",
         endTrigger: ".project-wrapper",
         end: "bottom bottom",
-        markers: true,
+        // markers: true,
       },
     });
   });
   return (
-    <div className="h-500 mt-[100vh] project-wrapper flex justify-center relative z-10 bg-black w-full">
+    <div className="h-500 project-wrapper flex justify-center relative z-10 bg-black w-full">
       <div className="h-full absolute flex flex-col justify-around items-center">
         <div className="w-[100px] h-[100px] bg-white"></div>
         <div className="w-[100px] h-[100px] bg-red-500"></div>
@@ -36,7 +36,7 @@ const Projects = () => {
           <div className="pb-5 w-full px-5">
             <div className="flex justify-between">
               <p>View More</p>
-              <p className="opacity-50">(click)</p>
+              <p className="opacity-50">(click →)</p>
             </div>
             <div className="w-full bg-white h-[1px] my-2"></div>
             <div className="flex justify-between">
