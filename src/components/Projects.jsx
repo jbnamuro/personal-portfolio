@@ -2,26 +2,93 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FontCheck from "./FontCheck";
+import { SplitText } from "gsap/SplitText";
 
 const Projects = () => {
-  useGSAP(() => {
-    gsap.to(".pin-here", {
-      scrollTrigger: {
-        trigger: ".pin-here",
-        pin: true,
-        start: "top top",
-        endTrigger: ".project-wrapper",
-        end: "bottom bottom",
-        // markers: true,
-      },
-    });
-  });
+  const font = FontCheck();
+  useGSAP(
+    () => {
+      if (!font) return;
+      gsap.to(".pin-here", {
+        scrollTrigger: {
+          trigger: ".pin-here",
+          pin: true,
+          start: "top top",
+          endTrigger: ".project-wrapper",
+          end: "bottom bottom",
+          // markers: true,
+        },
+      });
+      const titles = SplitText.create(".first-split", {
+        type: "words",
+        mask: "words",
+      });
+      const titles2 = SplitText.create(".second-split", {
+        type: "words",
+        mask: "words",
+      });
+      const titles3 = SplitText.create(".third-split", {
+        type: "words",
+        mask: "words",
+      });
+      gsap.set(titles2.words, {
+        yPercent: 100,
+      });
+      gsap.set(titles.words, {
+        yPercent: 100,
+      });
+      gsap.set(titles3.words, {
+        yPercent: 100,
+      });
+      gsap.to(titles.words, {
+        yPercent: 0,
+        stagger: 0.05,
+        ease: "power4.inOut",
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".box1",
+          start: "top 75%",
+          endTrigger: ".box2",
+          end: "top 75%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to(titles2.words, {
+        yPercent: 0,
+        stagger: 0.05,
+        ease: "power4.inOut",
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".box2",
+          start: "top 75%",
+          endTrigger: ".box3",
+          end: "top 75%",
+          toggleActions: "play reverse play reverse",
+        },
+      });
+      gsap.to(titles3.words, {
+        yPercent: 0,
+        stagger: 0.05,
+        ease: "power4.inOut",
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".box3",
+          start: "top 75%",
+          endTrigger: ".project-wrapper",
+          end: "bottom bottom",
+          toggleActions: "play none play reverse",
+        },
+      });
+    },
+    { dependencies: [font] }
+  );
   return (
-    <div className="h-500 project-wrapper flex justify-center relative z-10 bg-black w-full">
-      <div className="h-full absolute flex flex-col justify-around items-center">
-        <div className="w-[100px] h-[100px] bg-white"></div>
-        <div className="w-[100px] h-[100px] bg-red-500"></div>
-        <div className="w-[100px] h-[100px] bg-blue-500"></div>
+    <div className="h-800 project-wrapper flex justify-center relative z-10 bg-black w-full">
+      <div className="h-full justify-evenly absolute flex flex-col  items-center">
+        <div className="box1 w-[100px] h-[100px] bg-white"></div>
+        <div className="box2 w-[100px] h-[100px] bg-green-500"></div>
+        <div className="box3 w-[100px] h-[100px] bg-blue-500"></div>
       </div>
       <div className="h-screen w-full">
         <div className="pin-here h-full flex flex-col justify-between">
@@ -40,10 +107,24 @@ const Projects = () => {
             </div>
             <div className="w-full bg-white h-[1px] my-2"></div>
             <div className="flex justify-between">
-              <h2 className="text-3xl">Wet Basement Systems</h2>
-              <h2 className="">
-                <sup>N/01</sup>
+              <div className="text-3xl relative">
+                <h3 className="absolute mix-blend-difference first-split text-nowrap top-0 left-0">
+                  Wet Basement Systems
+                </h3>
+                <h3 className="top-0 left-0 mix-blend-difference second-split absolute text-nowrap">
+                  Personal Portfolio
+                </h3>
+                <h3 className="top-0 left-0 mix-blend-difference third-split absolute text-nowrap">
+                  test
+                </h3>
+              </div>
+
+              <h2 className="text-3xl relative opacity-0 pointer-events-none">
+                easter egg
               </h2>
+              <div className="">
+                <sup>N/01</sup>
+              </div>
             </div>
           </div>
         </div>

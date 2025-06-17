@@ -12,14 +12,6 @@ const Landing = () => {
         scrollTrigger: {
           trigger: ".landing-cont",
           start: "top top",
-          // markers: true,
-          scrub: true,
-        },
-      });
-      gsap.to(".landing-cont", {
-        scrollTrigger: {
-          trigger: ".landing-cont",
-          start: "top top",
           endTrigger: ".project-wrapper",
           end: "top top",
           // markers: "true",
