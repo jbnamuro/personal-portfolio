@@ -2,11 +2,11 @@ import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FontCheck from "./FontCheck";
+import useFont from "./useFont";
 import { SplitText } from "gsap/SplitText";
 
 const Projects = () => {
-  const font = FontCheck();
+  const font = useFont();
   useGSAP(
     () => {
       if (!font) return;
