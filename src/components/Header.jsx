@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import useFont from "./useFont";
 import { SplitText } from "gsap/SplitText";
 
 const Header = () => {
+  const menuCont = useRef(null);
   const [menu, openMenu] = useState(false);
   const [clickable, changeClick] = useState(false);
   const font = useFont();
@@ -15,6 +16,19 @@ const Header = () => {
         type: "words",
         mask: "words",
       });
+      const navigate = SplitText.create(".navigate", {
+        type: "words",
+        mask: "words",
+      });
+      const connect = SplitText.create(".connect", {
+        type: "words",
+        mask: "words",
+      });
+      const hello = SplitText.create(".hello", {
+        type: "words",
+        mask: "words",
+      });
+
       if (menu) {
         gsap.set(".menu", {
           clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
@@ -29,8 +43,8 @@ const Header = () => {
         });
         opentl.to(".menu", {
           clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-          duration: 1,
-          ease: "power4.inOut",
+          duration: 0.7,
+          ease: "power2.inOut",
         });
         opentl.from(
           purp.words,
@@ -38,12 +52,51 @@ const Header = () => {
             yPercent: 100,
             stagger: {
               from: "end",
-              amount: 0.1,
+              amount: 0.12,
             },
-            duration: 1,
-            ease: "power4.out",
+            duration: 0.8,
+            ease: "power2.out",
           },
           "-=0.5"
+        );
+        opentl.from(
+          navigate.words,
+          {
+            yPercent: 100,
+            stagger: {
+              from: "end",
+              amount: 0.1,
+            },
+            duration: 0.8,
+            ease: "power4.out",
+          },
+          "<"
+        );
+        opentl.from(
+          connect.words,
+          {
+            yPercent: 100,
+            stagger: {
+              from: "end",
+              amount: 0.1,
+            },
+            duration: 0.8,
+            ease: "power4.out",
+          },
+          "<"
+        );
+        opentl.from(
+          hello.words,
+          {
+            yPercent: 100,
+            stagger: {
+              from: "end",
+              amount: 0.1,
+            },
+            duration: 0.8,
+            ease: "power4.out",
+          },
+          "<"
         );
       }
       if (!menu) {
@@ -54,19 +107,22 @@ const Header = () => {
         });
         closemenu.to(".menu", {
           clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-          duration: 1,
-          ease: "power4.inOut",
+          duration: 0.7,
+          ease: "power2.inOut",
         });
         closemenu.set(".menu", {
           visibility: "hidden",
         });
       }
     },
-    { dependencies: [menu, font] }
+    { dependencies: [menu, font], scope: menuCont.current }
   );
   return (
-    <div className="fixed top-0 left-0 w-full z-100 flex justify-between px-5 py-2 text-xl">
-      <div className="h-screen w-full absolute top-0 left-0 menu invisible flex flex-col bg-[#0a0a0a]">
+    <div
+      ref={menuCont}
+      className="fixed top-0 left-0 w-full z-100 flex justify-between px-5 py-2 text-xl"
+    >
+      <div className="h-screen overflow-hidden w-full absolute top-0 left-0 menu invisible flex flex-col bg-[#0a0a0a]">
         <p
           className="underline px-5 py-2 self-end cursor-pointer"
           onClick={() => {
@@ -89,14 +145,14 @@ const Header = () => {
           <div className="w-full bg-white h-[1px] opacity-50"></div>
           <div className="">
             <div className="flex justify-between">
-              <div className="text-[4vh]">
+              <div className="text-[4vh] navigate">
                 <p className="opacity-50 text-[3vh]">Navigate (04)</p>
                 <p>Projects</p>
                 <p>About</p>
                 <p>Offers</p>
                 <p>Contact</p>
               </div>
-              <div className="text-[4vh]">
+              <div className="text-[4vh] connect">
                 <p className="opacity-50 text-[3vh]">Connect (2)</p>
                 <a href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/">
                   LinkedIn
@@ -108,7 +164,7 @@ const Header = () => {
               </div>
               <div className="pointer-events-none"></div>
             </div>
-            <div className="mt-10">
+            <div className="mt-10 hello">
               <p className="opacity-50 text-[3vh]">Say hello (1)</p>
               <p className="text-[4vh]">jabarinamuro@gmail.com</p>
             </div>
