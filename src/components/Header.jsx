@@ -1,10 +1,133 @@
-import React from "react";
+import React, { useState } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import useFont from "./useFont";
+import { SplitText } from "gsap/SplitText";
 
 const Header = () => {
+  const [menu, openMenu] = useState(false);
+  const [clickable, changeClick] = useState(false);
+  const font = useFont();
+  useGSAP(
+    () => {
+      if (!font) return;
+      const purp = SplitText.create(".purp", {
+        type: "words",
+        mask: "words",
+      });
+      if (menu) {
+        gsap.set(".menu", {
+          clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+        });
+        let opentl = gsap.timeline({
+          onComplete: () => {
+            changeClick(true);
+          },
+        });
+        opentl.set(".menu", {
+          visibility: "visible",
+        });
+        opentl.to(".menu", {
+          clipPath: "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
+          duration: 1,
+          ease: "power4.inOut",
+        });
+        opentl.from(
+          purp.words,
+          {
+            yPercent: 100,
+            stagger: {
+              from: "end",
+              amount: 0.1,
+            },
+            duration: 1,
+            ease: "power4.out",
+          },
+          "-=0.5"
+        );
+      }
+      if (!menu) {
+        let closemenu = gsap.timeline({
+          onComplete: () => {
+            changeClick(true);
+          },
+        });
+        closemenu.to(".menu", {
+          clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+          duration: 1,
+          ease: "power4.inOut",
+        });
+        closemenu.set(".menu", {
+          visibility: "hidden",
+        });
+      }
+    },
+    { dependencies: [menu, font] }
+  );
   return (
-    <div className="fixed top-0 left-0 mix-blend-difference w-full z-100 flex justify-between p-2 text-xl">
-      <p>JN</p>
-      <p className="underline">Menu</p>
+    <div className="fixed top-0 left-0 w-full z-100 flex justify-between px-5 py-2 text-xl">
+      <div className="h-screen w-full absolute top-0 left-0 menu invisible flex flex-col bg-[#0a0a0a]">
+        <p
+          className="underline px-5 py-2 self-end cursor-pointer"
+          onClick={() => {
+            if (clickable) {
+              openMenu(false);
+              console.log(menu);
+              changeClick(false);
+            }
+          }}
+        >
+          Close
+        </p>
+        <div className=" px-5 h-full flex flex-col justify-around">
+          <div className="purp">
+            <p className="opacity-50 text-[3vh]">(Philosophy)</p>
+            <h3 className="text-[6vh]">
+              Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
+            </h3>
+          </div>
+          <div className="w-full bg-white h-[1px] opacity-50"></div>
+          <div className="">
+            <div className="flex justify-between">
+              <div className="text-[4vh]">
+                <p className="opacity-50 text-[3vh]">Navigate (04)</p>
+                <p>Projects</p>
+                <p>About</p>
+                <p>Offers</p>
+                <p>Contact</p>
+              </div>
+              <div className="text-[4vh]">
+                <p className="opacity-50 text-[3vh]">Connect (2)</p>
+                <a href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/">
+                  LinkedIn
+                </a>
+                <br />
+                <a href="https://github.com/jbnamuro" target="_blank">
+                  Github
+                </a>
+              </div>
+              <div className="pointer-events-none"></div>
+            </div>
+            <div className="mt-10">
+              <p className="opacity-50 text-[3vh]">Say hello (1)</p>
+              <p className="text-[4vh]">jabarinamuro@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p className="relative z-100">JN</p>
+      <p
+        className="underline cursor-pointer"
+        onClick={() => {
+          if (clickable) {
+            openMenu(true);
+            console.log(menu);
+            changeClick(false);
+          }
+        }}
+      >
+        Menu
+      </p>
     </div>
   );
 };

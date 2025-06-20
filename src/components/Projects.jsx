@@ -192,7 +192,7 @@ const Projects = () => {
           </div>
           <div className="pb-5 bg-black w-full px-5">
             <div className="flex justify-between">
-              <p>View More</p>
+              <p>Learn More</p>
               <p className="opacity-50">(click →)</p>
             </div>
             <div className="w-full bg-white h-[1px] my-2"></div>
