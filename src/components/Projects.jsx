@@ -22,7 +22,7 @@ const Projects = () => {
       });
 
       gsap.from(".img1", {
-        scale: 0.7,
+        scale: 0.8,
         ease: "none",
         scrollTrigger: {
           trigger: ".img1",
@@ -32,7 +32,7 @@ const Projects = () => {
           // markers: true,
           onLeave: () => {
             gsap.to(".img1", {
-              scale: 0.7,
+              scale: 0.8,
               ease: "none",
               scrollTrigger: {
                 trigger: ".img1",
@@ -47,7 +47,7 @@ const Projects = () => {
       });
 
       gsap.from(".img2", {
-        scale: 0.7,
+        scale: 0.8,
         ease: "none",
         scrollTrigger: {
           trigger: ".img2",
@@ -57,7 +57,7 @@ const Projects = () => {
           // markers: true,
           onLeave: () => {
             gsap.to(".img2", {
-              scale: 0.7,
+              scale: 0.8,
               ease: "none",
               scrollTrigger: {
                 trigger: ".img2",
@@ -72,7 +72,7 @@ const Projects = () => {
       });
 
       gsap.from(".img3", {
-        scale: 0.7,
+        scale: 0.8,
         ease: "none",
         scrollTrigger: {
           trigger: ".img3",
@@ -82,7 +82,7 @@ const Projects = () => {
           // markers: true,
           onLeave: () => {
             gsap.to(".img3", {
-              scale: 0.7,
+              scale: 0.8,
               ease: "none",
               scrollTrigger: {
                 trigger: ".img3",

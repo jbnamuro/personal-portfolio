@@ -5,16 +5,18 @@ import Projects from "./components/Projects";
 import About from "./components/About";
 import Offers from "./components/Offers";
 import Footer from "./components/Footer";
+import Learn from "./components/Learn";
 
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header />
       <Landing />
       <Projects />
       <About />
       <Offers />
-      <Footer />
+      <Footer /> */}
+      <Learn />
     </>
   );
 };
