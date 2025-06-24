@@ -23,7 +23,7 @@ const About = () => {
         scrollTrigger: {
           trigger: ".abt-title",
           start: "top 60%",
-          toggleActions: "play none none reverse",
+          // toggleActions: "play none none reverse",
         },
       });
       const abtPara = SplitText.create(".abt", {
@@ -62,7 +62,7 @@ const About = () => {
         scrollTrigger: {
           trigger: ".met",
           start: "top 70%",
-          toggleActions: "play none none reverse",
+          // toggleActions: "play none none reverse",
         },
       });
 
@@ -74,7 +74,7 @@ const About = () => {
         scrollTrigger: {
           trigger: ".met",
           start: "top 70%",
-          toggleActions: "play none none reverse",
+          // toggleActions: "play none none reverse",
         },
       });
     },
@@ -82,7 +82,7 @@ const About = () => {
   );
   return (
     <div className="bg-black pt-5 px-5">
-      <h2 className="abt-title opacity-50 text-2xl">About Me</h2>
+      <h2 className="abt-title opacity-50 text-xl">About Me</h2>
       <p className="abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
         I'm Jabari, a creative frontend developer fueled by a passion for
         building interactive experiences that challenge the norm. Obsessed with
@@ -90,7 +90,7 @@ const About = () => {
         next level of excellence.
       </p>
       <p className="mt-5 met opacity-50 text-[3vw] md:text-lg lg:text-xl xl:text-2xl">
-        Meticulously crafting through
+        Meticulously crafting
       </p>
       <p className="opacity-50 vis text-[3vw] md:text-lg lg:text-xl xl:text-2xl pb-5">
         (Vision) → (Concept) → (Composition) → (Refinement) → (Delivery)

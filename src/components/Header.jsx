@@ -115,7 +115,7 @@ const Header = () => {
         });
       }
     },
-    { dependencies: [menu, font], scope: menuCont.current }
+    { dependencies: [menu, font], scope: menuCont }
   );
   return (
     <div
@@ -128,7 +128,7 @@ const Header = () => {
           onClick={() => {
             if (clickable) {
               openMenu(false);
-              console.log(menu);
+              // console.log(menu);
               changeClick(false);
             }
           }}
@@ -177,7 +177,7 @@ const Header = () => {
         onClick={() => {
           if (clickable) {
             openMenu(true);
-            console.log(menu);
+            // console.log(menu);
             changeClick(false);
           }
         }}

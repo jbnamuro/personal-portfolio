@@ -167,6 +167,7 @@ const Projects = () => {
             src="./portfolio.jpg"
             alt="personal portfolio website"
             className="img1"
+            fetchPriority="high"
           />
         </div>
         <div className="box2 w-[75vw] max-w-[600px] bg-black">
@@ -174,10 +175,16 @@ const Projects = () => {
             src="./wbs.jpg"
             alt="wet basement systems website"
             className="img2"
+            fetchPriority="high"
           />
         </div>
         <div className="box3 w-[75vw] max-w-[600px] bg-black">
-          <img src="./prevport.jpg" alt="portfolio website" className="img3" />
+          <img
+            src="./prevport.jpg"
+            alt="portfolio website"
+            className="img3"
+            fetchPriority="high"
+          />
         </div>
       </div>
       <div className="h-screen w-full">
