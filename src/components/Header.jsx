@@ -171,7 +171,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <p className="relative z-100">JN</p>
+      <p className="relative z-100"></p>
       <p
         className="underline cursor-pointer"
         onClick={() => {

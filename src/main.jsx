@@ -1,7 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App.jsx";
+import Learn from "./components/Learn.jsx";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
@@ -25,6 +27,50 @@ gsap.ticker.lagSmoothing(0);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route index element={<App />} />
+        <Route
+          path="learnExperiment"
+          element={
+            <Learn
+              title="Wet Basement Systems"
+              description="A clean, straightforward website built for a Toronto-based
+          waterproofing company, focusing on clarity, ease of navigation, and
+          professional presentation."
+              video="./wbs.mp4"
+              next="/learnWBS"
+            />
+          }
+        />
+        <Route
+          path="learnWBS"
+          element={
+            <Learn
+              title="Wet Basement Systems"
+              description="A clean, straightforward website built for a Toronto-based
+          waterproofing company, focusing on clarity, ease of navigation, and
+          professional presentation."
+              video="./wbs.mp4"
+              link="https://wetbasementstoronto.com/"
+              next="/learnPortfolio"
+            />
+          }
+        />
+        <Route
+          path="learnPortfolio"
+          element={
+            <Learn
+              title="Wet Basement Systems"
+              description="A clean, straightforward website built for a Toronto-based
+          waterproofing company, focusing on clarity, ease of navigation, and
+          professional presentation."
+              video="./wbs.mp4"
+              next="/learnExperiment"
+            />
+          }
+        />
+      </Routes>
+    </BrowserRouter>
   </StrictMode>
 );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -156,6 +157,26 @@ const Projects = () => {
           toggleActions: "play none play reverse",
         },
       });
+
+      gsap.to(".link2", {
+        display: "block",
+        duration: 0.1,
+        scrollTrigger: {
+          trigger: ".box2",
+          start: "top 75%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      gsap.to(".link3", {
+        display: "block",
+        duration: 0.1,
+        scrollTrigger: {
+          trigger: ".box3",
+          start: "top 75%",
+          toggleActions: "play none none reverse",
+        },
+      });
     },
     { dependencies: [font] }
   );
@@ -189,20 +210,41 @@ const Projects = () => {
       </div>
       <div className="h-screen w-full">
         <div className="pin-here h-full flex flex-col justify-between">
-          <div className="bg-black  px-5 pt-5">
+          <div className="px-5 bg-black pt-5">
             <h1 className="text-3xl">Projects</h1>
             <div className="flex justify-between">
-              <p>Tech meets design — scroll through my digital experiments.</p>
+              <p className="opacity-50">
+                Tech meets design — scroll through my digital experiments.
+              </p>
               <p className="opacity-50 hidden">(scroll)</p>
             </div>
             <div className="w-full h-[1px] mt-2 opacity-50 bg-white"></div>
           </div>
-          <div className="pb-5 bg-black w-full px-5">
+          <div className="pb-5 w-full px-5 group bg-black relative">
+            <Link
+              to="/learnExperiment"
+              className="link1 h-full absolute top-0 left-0 w-full z-100"
+            ></Link>
+            <Link
+              to="/learnWBS"
+              className="link2 h-full absolute top-0 left-0 w-full hidden z-100"
+            ></Link>
+            <Link
+              to="/learnPortfolio"
+              className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
+            ></Link>
             <div className="flex justify-between">
-              <p>Learn More</p>
-              <p className="opacity-50">(click →)</p>
+              <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out">
+                Learn More
+              </p>
+              <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out">
+                →
+              </p>
             </div>
-            <div className="w-full bg-white h-[1px] my-2"></div>
+            <div className="w-full h-[1px] my-2 relative">
+              <div className="w-full h-full bg-white opacity-50 top-0 left-0 absolute"></div>
+              <div className="w-0 h-full bg-white top-0 left-0 absolute group-hover:w-full duration-500 ease-in-out"></div>
+            </div>
             <div className="flex justify-between">
               <div className="text-3xl relative">
                 <h3 className="absolute mix-blend-difference first-split text-nowrap top-0 left-0">

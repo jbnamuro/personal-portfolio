@@ -10,13 +10,12 @@ import Learn from "./components/Learn";
 const App = () => {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Landing />
       <Projects />
       <About />
       <Offers />
-      <Footer /> */}
-      <Learn />
+      <Footer />
     </>
   );
 };
