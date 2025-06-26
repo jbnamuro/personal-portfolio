@@ -185,16 +185,16 @@ const Projects = () => {
       <div className="h-full justify-evenly absolute flex flex-col  items-center">
         <div className="box1 w-[75vw] max-w-[600px] bg-black">
           <img
-            src="./portfolio.jpg"
-            alt="personal portfolio website"
+            src="./wbs.jpg"
+            alt="wet basement systems website"
             className="img1"
             fetchPriority="high"
           />
         </div>
         <div className="box2 w-[75vw] max-w-[600px] bg-black">
           <img
-            src="./wbs.jpg"
-            alt="wet basement systems website"
+            src="./portfolio.jpg"
+            alt="personal portfolio concept website"
             className="img2"
             fetchPriority="high"
           />
@@ -222,11 +222,11 @@ const Projects = () => {
           </div>
           <div className="pb-5 w-full px-5 group bg-black relative">
             <Link
-              to="/learnExperiment"
+              to="/learnWBS"
               className="link1 h-full absolute top-0 left-0 w-full z-100"
             ></Link>
             <Link
-              to="/learnWBS"
+              to="/learnExperiment"
               className="link2 h-full absolute top-0 left-0 w-full hidden z-100"
             ></Link>
             <Link
@@ -248,10 +248,10 @@ const Projects = () => {
             <div className="flex justify-between">
               <div className="text-3xl relative">
                 <h3 className="absolute mix-blend-difference first-split text-nowrap top-0 left-0">
-                  Animation Experiment
+                  Wet Basement Systems
                 </h3>
                 <h3 className="top-0 left-0 mix-blend-difference second-split absolute text-nowrap">
-                  Wet Basement Systems
+                  Animation Experiment
                 </h3>
                 <h3 className="top-0 left-0 mix-blend-difference third-split absolute text-nowrap">
                   Previous Portfolio

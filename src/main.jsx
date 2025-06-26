@@ -39,21 +39,6 @@ createRoot(document.getElementById("root")).render(
           }
         />
         <Route
-          path="learnExperiment"
-          element={
-            <Transition>
-              <Learn
-                title="Wet Basement Systems"
-                description="A clean, straightforward website built for a Toronto-based
-          waterproofing company, focusing on clarity, ease of navigation, and
-          professional presentation."
-                video="./wbs.mp4"
-                next="/learnWBS"
-              />
-            </Transition>
-          }
-        />
-        <Route
           path="learnWBS"
           element={
             <Transition>
@@ -64,6 +49,19 @@ createRoot(document.getElementById("root")).render(
           professional presentation."
                 video="./wbs.mp4"
                 link="https://wetbasementstoronto.com/"
+                next="/learnExperiment"
+              />
+            </Transition>
+          }
+        />
+        <Route
+          path="learnExperiment"
+          element={
+            <Transition>
+              <Learn
+                title="Animation Experiment"
+                description="A concept site created to experiment with advanced animations and unconventional design. Built as a playground for testing creative front-end techniques and challenging typical design patterns."
+                video="./wbs.mp4"
                 next="/learnPortfolio"
               />
             </Transition>
@@ -74,12 +72,10 @@ createRoot(document.getElementById("root")).render(
           element={
             <Transition>
               <Learn
-                title="Wet Basement Systems"
-                description="A clean, straightforward website built for a Toronto-based
-          waterproofing company, focusing on clarity, ease of navigation, and
-          professional presentation."
-                video="./wbs.mp4"
-                next="/learnExperiment"
+                title="Previous Portfolio"
+                description="An early portfolio built as part of my learning journey into front-end development and design. It reflects the foundations of my skills and marks the beginning of my exploration into web animation, layout, and user interface experimentation."
+                video="./old.mp4"
+                next="/learnWBS"
               />
             </Transition>
           }
