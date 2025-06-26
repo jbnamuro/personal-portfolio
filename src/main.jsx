@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
 import Lenis from "lenis";
+import Transition from "./components/Transition/Transition.jsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 // Initialize a new Lenis instance for smooth scrolling
@@ -29,45 +30,58 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route index element={<App />} />
+        <Route
+          index
+          element={
+            <Transition>
+              <App />
+            </Transition>
+          }
+        />
         <Route
           path="learnExperiment"
           element={
-            <Learn
-              title="Wet Basement Systems"
-              description="A clean, straightforward website built for a Toronto-based
+            <Transition>
+              <Learn
+                title="Wet Basement Systems"
+                description="A clean, straightforward website built for a Toronto-based
           waterproofing company, focusing on clarity, ease of navigation, and
           professional presentation."
-              video="./wbs.mp4"
-              next="/learnWBS"
-            />
+                video="./wbs.mp4"
+                next="/learnWBS"
+              />
+            </Transition>
           }
         />
         <Route
           path="learnWBS"
           element={
-            <Learn
-              title="Wet Basement Systems"
-              description="A clean, straightforward website built for a Toronto-based
+            <Transition>
+              <Learn
+                title="Wet Basement Systems"
+                description="A clean, straightforward website built for a Toronto-based
           waterproofing company, focusing on clarity, ease of navigation, and
           professional presentation."
-              video="./wbs.mp4"
-              link="https://wetbasementstoronto.com/"
-              next="/learnPortfolio"
-            />
+                video="./wbs.mp4"
+                link="https://wetbasementstoronto.com/"
+                next="/learnPortfolio"
+              />
+            </Transition>
           }
         />
         <Route
           path="learnPortfolio"
           element={
-            <Learn
-              title="Wet Basement Systems"
-              description="A clean, straightforward website built for a Toronto-based
+            <Transition>
+              <Learn
+                title="Wet Basement Systems"
+                description="A clean, straightforward website built for a Toronto-based
           waterproofing company, focusing on clarity, ease of navigation, and
           professional presentation."
-              video="./wbs.mp4"
-              next="/learnExperiment"
-            />
+                video="./wbs.mp4"
+                next="/learnExperiment"
+              />
+            </Transition>
           }
         />
       </Routes>
