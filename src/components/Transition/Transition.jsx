@@ -20,8 +20,8 @@ const Transition = ({ children }) => {
     tl.to(".bar", {
       height: "100%",
       stagger: {
-        amount: 0.2,
-        from: "center",
+        amount: 0.15,
+        from: "start",
       },
       onComplete: () => {
         changeChild(children);
@@ -34,8 +34,8 @@ const Transition = ({ children }) => {
     tl.to(".bar", {
       height: "0%",
       stagger: {
-        amount: 0.2,
-        from: "center",
+        amount: 0.15,
+        from: "end",
       },
     });
     tl.set(overlap.current, {
@@ -52,11 +52,11 @@ const Transition = ({ children }) => {
         ref={overlap}
         className="h-full w-full fixed top-0 left-0 z-1000 hidden rotate-180"
       >
-        <div className="w-1/5 bar bg-[#0a0a0a] h-[0%]"></div>
-        <div className="w-1/5 bar bg-[#0a0a0a] h-[0%]"></div>
-        <div className="w-1/5 bar bg-[#0a0a0a] h-[0%]"></div>
-        <div className="w-1/5 bar bg-[#0a0a0a] h-[0%]"></div>
-        <div className="w-1/5 bar bg-[#0a0a0a] h-[0%]"></div>
+        <div className="w-1/5 bar bg-black h-[0%] border-1"></div>
+        <div className="w-1/5 bar bg-black h-[0%] border-1"></div>
+        <div className="w-1/5 bar bg-black h-[0%] border-1"></div>
+        <div className="w-1/5 bar bg-black h-[0%] border-1"></div>
+        <div className="w-1/5 bar bg-black h-[0%] border-1"></div>
       </div>
       {currentChild}
     </div>
