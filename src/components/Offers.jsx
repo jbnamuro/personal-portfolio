@@ -90,7 +90,10 @@ const Offers = () => {
     { dependencies: [font] }
   );
   return (
-    <div className="h-[50vh] mt-5 pin relative flex flex-col justify-between">
+    <div
+      id="offers"
+      className="h-[50vh] mt-5 pin relative flex flex-col justify-between"
+    >
       <div className="h-full w-full flex card1 bg-black absolute flex-col justify-center px-5">
         <div className="flex justify-between items-center">
           <div className="title-web">

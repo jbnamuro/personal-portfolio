@@ -81,7 +81,7 @@ const About = () => {
     { dependencies: [font] }
   );
   return (
-    <div className="bg-black pt-5 px-5">
+    <div id="about" className="bg-black pt-5 px-5">
       <h2 className="abt-title opacity-50 text-xl">About Me</h2>
       <p className="abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
         I'm Jabari, a creative frontend developer fueled by a passion for

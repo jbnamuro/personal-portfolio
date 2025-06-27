@@ -99,7 +99,7 @@ const Footer = () => {
     { dependencies: [font], scope: footerRef }
   );
   return (
-    <div ref={footerRef}>
+    <div id="contact" ref={footerRef}>
       <div className="h-screen bg-black px-5 py-10 text-[4vh] footer flex flex-col justify-between">
         <div className="">
           <div className="flex justify-between">

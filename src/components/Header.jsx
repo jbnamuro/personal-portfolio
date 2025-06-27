@@ -3,12 +3,34 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import useFont from "./useFont";
 import { SplitText } from "gsap/SplitText";
+import { useLenis } from "lenis/react";
 
 const Header = () => {
+  const lenis = useLenis();
   const menuCont = useRef(null);
   const [menu, openMenu] = useState(false);
   const [clickable, changeClick] = useState(false);
   const font = useFont();
+
+  //     if (clickable) {
+  //     openMenu(false);
+  //     // console.log(menu);
+  //     changeClick(false);
+  //   }
+  // }}
+
+  const scrollToSection = (target) => {
+    if (clickable) {
+      if (lenis) {
+        lenis.scrollTo(`#${target}`, {
+          duration: 1,
+        });
+        openMenu(false);
+        // console.log(menu);
+        changeClick(false);
+      }
+    }
+  };
   useGSAP(
     () => {
       if (!font) return;
@@ -147,10 +169,38 @@ const Header = () => {
             <div className="flex justify-between">
               <div className="text-[4vh] navigate">
                 <p className="opacity-50 text-[3vh]">Navigate (04)</p>
-                <p>Projects</p>
-                <p>About</p>
-                <p>Offers</p>
-                <p>Contact</p>
+                <p
+                  className="cursor-pointer"
+                  onClick={() => {
+                    scrollToSection("projects");
+                  }}
+                >
+                  Projects
+                </p>
+                <p
+                  className="cursor-pointer"
+                  onClick={() => {
+                    scrollToSection("about");
+                  }}
+                >
+                  About
+                </p>
+                <p
+                  className="cursor-pointer"
+                  onClick={() => {
+                    scrollToSection("offers");
+                  }}
+                >
+                  Offers
+                </p>
+                <p
+                  className="cursor-pointer"
+                  onClick={() => {
+                    scrollToSection("contact");
+                  }}
+                >
+                  Contact
+                </p>
               </div>
               <div className="text-[4vh] connect">
                 <p className="opacity-50 text-[3vh]">Connect (2)</p>
