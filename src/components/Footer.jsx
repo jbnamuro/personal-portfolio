@@ -4,10 +4,23 @@ import { useGSAP } from "@gsap/react";
 import useFont from "./useFont";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { SplitText } from "gsap/SplitText";
+import { useLenis } from "lenis/react";
 
 const Footer = () => {
   const footerRef = useRef(null);
   const font = useFont();
+
+  const lenis = useLenis();
+  const scrollToSection = (target) => {
+    if (lenis) {
+      lenis.scrollTo(`#${target}`, {
+        duration: 1,
+      });
+      openMenu(false);
+      // console.log(menu);
+      changeClick(false);
+    }
+  };
   useGSAP(
     () => {
       if (!font) return;
@@ -105,10 +118,30 @@ const Footer = () => {
           <div className="flex justify-between">
             <div className="navigate">
               <p className="opacity-50 text-[3vh] text-nowrap">Navigate (04)</p>
-              <p>Projects</p>
-              <p>About</p>
-              <p>Offers</p>
-              <p>Contact</p>
+              <p
+                className="cursor-pointer"
+                onClick={() => {
+                  scrollToSection("projects");
+                }}
+              >
+                Projects
+              </p>
+              <p
+                className="cursor-pointer"
+                onClick={() => {
+                  scrollToSection("about");
+                }}
+              >
+                About
+              </p>
+              <p
+                className="cursor-pointer"
+                onClick={() => {
+                  scrollToSection("offers");
+                }}
+              >
+                Offers
+              </p>
             </div>
             <div className="connect">
               <p className="opacity-50 text-[3vh] text-nowrap">Connect (2)</p>

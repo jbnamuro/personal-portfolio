@@ -6,7 +6,6 @@ import { SplitText } from "gsap/SplitText";
 import { useLenis } from "lenis/react";
 
 const Header = () => {
-  const lenis = useLenis();
   const menuCont = useRef(null);
   const [menu, openMenu] = useState(false);
   const [clickable, changeClick] = useState(false);
@@ -19,6 +18,7 @@ const Header = () => {
   //   }
   // }}
 
+  const lenis = useLenis();
   const scrollToSection = (target) => {
     if (clickable) {
       if (lenis) {
