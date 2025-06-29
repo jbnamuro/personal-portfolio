@@ -20,7 +20,7 @@ const Router = () => {
     return () => gsap.ticker.remove(update);
   }, []);
   return (
-    <ReactLenis root options={{ autoRaf: false }} ref={lenisRef}>
+    <ReactLenis root options={{ autoRaf: false, duration: 0.9 }} ref={lenisRef}>
       <BrowserRouter>
         <Routes>
           <Route
