@@ -30,72 +30,40 @@ const Offers = () => {
             start: "top 95%",
           },
         });
-      });
 
-      gsap.set(".card2", {
-        yPercent: 100,
-      });
-      gsap.set(".card3", {
-        yPercent: 200,
-      });
-
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: ".pin",
-          start: "top top",
-          endTrigger: ".footer",
-          end: "center top",
-          scrub: true,
-          pin: true,
-          ignoreMobileResize: true,
-          // markers: true,
-        },
-      });
-      tl.to(".card1", {
-        scale: 0.85,
-        ease: "none",
-      });
-
-      tl.to(
-        ".card2",
-        {
-          yPercent: 0,
-          ease: "none",
+        gsap.to(".card2", {
           backgroundColor: "black",
-        },
-        "<"
-      );
-      tl.to(
-        ".card3",
-        {
-          yPercent: 100,
-          ease: "none",
-          backgroundColor: "#0A0A0A",
-        },
-        "<"
-      );
-      tl.to(".card3", {
-        yPercent: 0,
-        ease: "none",
-        backgroundColor: "black",
+          scrollTrigger: {
+            trigger: ".card2",
+            start: "top center",
+            end: "top top",
+            scrub: true,
+            // markers: true,
+          },
+        });
+
+        gsap.to(".card3", {
+          backgroundColor: "black",
+          scrollTrigger: {
+            trigger: ".card2",
+            start: "top center",
+            endTrigger: ".card3",
+            end: "top top",
+            scrub: true,
+            // markers: true,
+          },
+        });
       });
-      tl.to(
-        ".card2",
-        {
-          scale: 0.85,
-          ease: "none",
-        },
-        "<"
-      );
     },
+    // },
     { dependencies: [font] }
   );
   return (
     <div
       id="offers"
-      className="h-[50vh] mt-5 pin relative flex flex-col justify-between"
+      className="h-[150vh] mt-5 pin relative flex flex-col justify-between"
     >
-      <div className="h-full w-full flex card1 bg-black absolute flex-col justify-center px-5">
+      <div className="h-[50vh]  w-full flex card1 bg-black  relative flex-col justify-center px-5">
         <div className="flex justify-between items-center">
           <div className="title-web">
             <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
@@ -112,7 +80,7 @@ const Offers = () => {
         </div>
       </div>
 
-      <div className="absolute card2 w-full left-0  bg-[#0A0A0A] h-full flex flex-col justify-center px-5">
+      <div className=" h-[50vh]  relative card2 w-full left-0  bg-[#0A0A0A] flex flex-col justify-center px-5">
         <div className="flex justify-between items-center">
           <div className="title-uiux">
             <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
@@ -129,7 +97,7 @@ const Offers = () => {
         </div>
       </div>
 
-      <div className="absolute w-full card3 left-0 h-full  bg-[#141414] flex flex-col justify-center px-5">
+      <div className=" relative w-full card3 left-0 h-[50vh]   bg-[#141414] flex flex-col justify-center px-5">
         <div className="flex justify-between items-center">
           <div className="title-branding">
             <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
