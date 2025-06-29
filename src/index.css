@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-Black.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskBlack.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-BlackItalic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskBlackItalic.woff2") format("woff2");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-ExtraBold.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskExtraBold.woff2") format("woff2");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-ExtraBoldItalic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskExtraBoldItalic.woff2") format("woff2");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-Bold.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskBold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-BoldItalic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskBoldItalic.woff2") format("woff2");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-SemiBold.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskSemiBold.woff2") format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -58,7 +58,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-SemiBoldItalic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskSemiBoldItalic.woff2") format("woff2");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
@@ -66,7 +66,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-Medium.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskMedium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -74,7 +74,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-MediumItalic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskMediumItalic.woff2") format("woff2");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -82,7 +82,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-Roman.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskRoman.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -90,7 +90,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-Italic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskItalic.woff2") format("woff2");
   font-weight: 400; /* Roman's weight */
   font-style: italic;
   font-display: swap;
@@ -98,7 +98,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-Book.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskBook.woff2") format("woff2");
   font-weight: 350;
   font-style: normal;
   font-display: swap;
@@ -106,7 +106,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-BookItalic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskBookItalic.woff2") format("woff2");
   font-weight: 350;
   font-style: italic;
   font-display: swap;
@@ -114,7 +114,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-Light.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskLight.woff2") format("woff2");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -122,7 +122,7 @@
 
 @font-face {
   font-family: "OverusedGrotesk";
-  src: url("fonts/OverusedGrotesk-LightItalic.woff2") format("woff2");
+  src: url("fonts/OverusedGroteskLightItalic.woff2") format("woff2");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -131,7 +131,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "OverusedGrotesk", sans-serif;
+  font-family: "OverusedGrotesk";
   background-color: black;
   color: white;
 }
