@@ -4,6 +4,7 @@ import { useGSAP } from "@gsap/react";
 import useFont from "./useFont";
 import { SplitText } from "gsap/SplitText";
 import { useLenis } from "lenis/react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const menuCont = useRef(null);
@@ -234,17 +235,30 @@ const Header = () => {
                   </p>
                 </div>
                 <div className="text-[4vh] connect">
-                  <p className="opacity-50 text-[3vh]">Connect (2)</p>
-                  <a
-                    href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/"
-                    target="_blank"
-                  >
-                    LinkedIn
-                  </a>
+                  <p className="opacity-50 text-[3vh]">Projects (3)</p>
+                  {/* <Link
+              to="/learnWBS"
+              className="link1 h-full absolute top-0 left-0 w-full z-100"
+            ></Link>
+            <Link
+              to="/learnExperiment"
+              className="link2 h-full absolute top-0 left-0 w-full hidden z-100"
+            ></Link>
+            <Link
+              to="/learnPortfolio"
+              className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
+            ></Link> */}
+                  <Link to="/learnWBS" className="">
+                    WBS
+                  </Link>
                   <br />
-                  <a href="https://github.com/jbnamuro" target="_blank">
-                    Github
-                  </a>
+                  <Link to="/learnExperiment" className="">
+                    Experiment
+                  </Link>
+                  <br />
+                  <Link to="/learnPortfolio" className="">
+                    Portfolio
+                  </Link>
                 </div>
                 <div className="pointer-events-none"></div>
               </div>
