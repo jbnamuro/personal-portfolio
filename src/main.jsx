@@ -8,6 +8,7 @@ import Router from "./components/Router/Router.jsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 // ScrollTrigger.normalizeScroll(true);
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

@@ -212,7 +212,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="pin-here h-dvh flex flex-col justify-between">
+        <div className="pin-here h-screen flex flex-col justify-between">
           <div className="px-5 bg-black pt-5">
             <h1 className="text-3xl">Projects</h1>
             <div className="flex justify-between">
