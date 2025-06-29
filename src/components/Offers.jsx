@@ -47,6 +47,7 @@ const Offers = () => {
           end: "center top",
           scrub: true,
           pin: true,
+          ignoreMobileResize: true,
           // markers: true,
         },
       });
