@@ -192,7 +192,7 @@ const Header = () => {
           <div className="px-5 h-full flex flex-col justify-around">
             <div className="purp">
               <p className="opacity-50 text-[3vh]">(Philosophy)</p>
-              <h3 className="text-[6vh]/[8vh]">
+              <h3 className="text-[6vh]/[7vh]">
                 Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
               </h3>
             </div>
