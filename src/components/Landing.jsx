@@ -8,7 +8,7 @@ const Landing = () => {
   useGSAP(
     () => {
       gsap.to(".landing-cont", {
-        y: -200,
+        y: ScrollTrigger.isTouch ? 0 : -200,
         scrollTrigger: {
           trigger: ".landing-cont",
           start: "top top",
