@@ -216,7 +216,7 @@ const Projects = () => {
           <div className="px-5 bg-black pt-5">
             <h1 className="text-3xl">Projects</h1>
             <div className="flex justify-between">
-              <p className="opacity-50">
+              <p className="opacity-50 text-[3.5vw]/[3.5vw]">
                 Tech meets design — scroll through my digital experiments.
               </p>
               <p className="opacity-50 hidden">(scroll)</p>

@@ -2,13 +2,45 @@ import React, { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText } from "gsap/SplitText";
+import useFont from "./useFont";
 
 const Landing = () => {
   const homeRef = useRef(null);
+  const font = useFont();
   useGSAP(
     () => {
+      if (!font) return;
+      gsap.set(".white-box", {
+        y: 20,
+      });
+      gsap.to(".white-box", {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out",
+      });
+
+      const landing = SplitText.create(".landing-info", {
+        type: "lines",
+        mask: "lines",
+        onSplit: (self) => {
+          gsap.set(".land-text1", {
+            opacity: 1,
+          });
+          gsap.set(".land-text2", {
+            opacity: 0.5,
+          });
+          gsap.from(self.lines, {
+            yPercent: 100,
+            stagger: 0.1,
+            duration: 1,
+            ease: "power4.out",
+          });
+        },
+      });
+
       gsap.to(".landing-cont", {
-        y: ScrollTrigger.isTouch ? 0 : -200,
         scrollTrigger: {
           trigger: ".landing-cont",
           start: "top top",
@@ -21,7 +53,7 @@ const Landing = () => {
         },
       });
     },
-    { scope: homeRef.current }
+    { scope: homeRef.current, dependencies: [font] }
   );
   return (
     <div
@@ -29,7 +61,7 @@ const Landing = () => {
       className="landing-cont flex flex-col justify-center items-center top-0 left-0 h-svh -z-1 w-full"
     >
       <div className="w-full h-full bg-[url(/background.jpg)] bg-cover bg-no-repeat absolute top-0 left-0 -z-1 opacity-50"></div>
-      <div className="bg-white text-[3.5vw]/[3.5vw] md:text-2xl p-4 aspect-5/6  max-h-100 max-w-200 flex font-light flex-col justify-between w-[75%] text-black">
+      <div className="bg-white white-box text-[3.5vw]/[3.5vw] opacity-0 md:text-2xl p-4 aspect-5/6  max-h-100 max-w-200 flex font-light flex-col justify-between w-[75%] text-black">
         <div className="opacity-50 flex justify-between">
           <p className="">Jabari Namuro</p>
           <p>Based in Canada</p>
@@ -48,12 +80,14 @@ const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-10 bottom-2 w-[70%] max-w-150">
-        <p className="font-bold text-[3vw] md:text-xl">
+      <div className="text-center mt-10 bottom-2 w-[70%] landing-info max-w-150">
+        <p className="font-bold text-[3vw] md:text-xl opacity-0 land-text1">
           CRAFTING ANIMATED, INTERACTIVE WEB EXPERIENCES THAT ELEVATE BRANDS AND
           CAPTIVATE USERS.
         </p>
-        <p className="opacity-50 mt-2 text-[3vw] md:text-xl">(scroll)</p>
+        <p className="mt-2 text-[3vw] md:text-xl land-text2 opacity-0">
+          (scroll)
+        </p>
       </div>
     </div>
   );
