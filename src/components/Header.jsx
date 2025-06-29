@@ -11,6 +11,14 @@ const Header = () => {
   const [clickable, changeClick] = useState(false);
   const font = useFont();
 
+  // Store SplitText instances to prevent recreation
+  const splitTextRefs = useRef({
+    purp: null,
+    navigate: null,
+    connect: null,
+    hello: null,
+  });
+
   //     if (clickable) {
   //     openMenu(false);
   //     // console.log(menu);
@@ -31,25 +39,32 @@ const Header = () => {
       }
     }
   };
+
   useGSAP(
     () => {
       if (!font) return;
-      const purp = SplitText.create(".purp", {
-        type: "words",
-        mask: "words",
-      });
-      const navigate = SplitText.create(".navigate", {
-        type: "words",
-        mask: "words",
-      });
-      const connect = SplitText.create(".connect", {
-        type: "words",
-        mask: "words",
-      });
-      const hello = SplitText.create(".hello", {
-        type: "words",
-        mask: "words",
-      });
+
+      // Create SplitText instances only once
+      if (!splitTextRefs.current.purp) {
+        splitTextRefs.current.purp = SplitText.create(".purp", {
+          type: "words",
+          mask: "words",
+        });
+        splitTextRefs.current.navigate = SplitText.create(".navigate", {
+          type: "words",
+          mask: "words",
+        });
+        splitTextRefs.current.connect = SplitText.create(".connect", {
+          type: "words",
+          mask: "words",
+        });
+        splitTextRefs.current.hello = SplitText.create(".hello", {
+          type: "words",
+          mask: "words",
+        });
+      }
+
+      const { purp, navigate, connect, hello } = splitTextRefs.current;
 
       if (menu) {
         gsap.set(".menu", {
@@ -139,6 +154,21 @@ const Header = () => {
     },
     { dependencies: [menu, font], scope: menuCont }
   );
+
+  // Cleanup SplitText instances on unmount
+  useGSAP(
+    () => {
+      return () => {
+        Object.values(splitTextRefs.current).forEach((splitText) => {
+          if (splitText) {
+            splitText.revert();
+          }
+        });
+      };
+    },
+    { scope: menuCont }
+  );
+
   return (
     <div
       ref={menuCont}
