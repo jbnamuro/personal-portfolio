@@ -211,7 +211,7 @@ const Projects = () => {
           />
         </div>
       </div>
-      <div className="h-svh w-full">
+      <div className="h-dvh w-full">
         <div className="pin-here h-full flex flex-col justify-between">
           <div className="px-5 bg-black pt-5">
             <h1 className="text-3xl">Projects</h1>
