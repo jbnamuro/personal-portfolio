@@ -144,7 +144,7 @@ const Header = () => {
       ref={menuCont}
       className="fixed top-0 left-0 w-full z-100 flex justify-between px-5 py-2 text-xl"
     >
-      <div className="h-dvh overflow-hidden w-full absolute top-0 left-0 menu invisible flex flex-col bg-black">
+      <div className="h-svh overflow-hidden w-full absolute top-0 left-0 menu invisible flex flex-col bg-black">
         <p
           className="underline px-5 py-2 self-end cursor-pointer"
           onClick={() => {
