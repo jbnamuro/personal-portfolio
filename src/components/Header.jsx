@@ -174,7 +174,7 @@ const Header = () => {
       ref={menuCont}
       className="fixed top-0 left-0 w-full z-100 flex justify-between px-5 py-2 text-xl"
     >
-      <div className="h-svh overflow-hidden w-full absolute top-0 left-0 menu invisible flex flex-col bg-black">
+      <div className="h-svh w-full absolute top-0 left-0 menu invisible flex flex-col bg-black">
         <p
           className="underline px-5 py-2 self-end cursor-pointer"
           onClick={() => {
@@ -253,6 +253,7 @@ const Header = () => {
             </div>
           </div>
         </div>
+        <div className="absolute -z-1 top-0 left-0 bg-black h-screen w-full"></div>
       </div>
       <p className="relative z-100"></p>
       <p
