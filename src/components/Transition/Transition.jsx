@@ -19,6 +19,7 @@ const Transition = ({ children }) => {
     });
     tl.to(".bar", {
       height: "100%",
+      ease: "power2.inOut",
       stagger: {
         amount: 0.15,
         from: "start",
@@ -33,6 +34,7 @@ const Transition = ({ children }) => {
     });
     tl.to(".bar", {
       height: "0%",
+      ease: "power2.inOut",
       stagger: {
         amount: 0.15,
         from: "end",

@@ -36,8 +36,8 @@ const About = () => {
             scrollTrigger: {
               trigger: ".abt",
               start: "top 60%",
-              scrub: 1,
-              end: "bottom 70%",
+              scrub: true,
+              end: "bottom 50%",
               // markers: true,
             },
           });
@@ -61,7 +61,7 @@ const About = () => {
         stagger: 0.05,
         scrollTrigger: {
           trigger: ".met",
-          start: "top 70%",
+          start: "top 50%",
           // toggleActions: "play none none reverse",
         },
       });
@@ -73,7 +73,7 @@ const About = () => {
         stagger: 0.05,
         scrollTrigger: {
           trigger: ".met",
-          start: "top 70%",
+          start: "top 50%",
           // toggleActions: "play none none reverse",
         },
       });

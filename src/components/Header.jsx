@@ -204,7 +204,10 @@ const Header = () => {
               </div>
               <div className="text-[4vh] connect">
                 <p className="opacity-50 text-[3vh]">Connect (2)</p>
-                <a href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/">
+                <a
+                  href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/"
+                  target="_blank"
+                >
                   LinkedIn
                 </a>
                 <br />

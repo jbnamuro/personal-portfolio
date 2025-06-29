@@ -54,7 +54,8 @@ const Router = () => {
                 <Learn
                   title="Animation Experiment"
                   description="A concept site created to experiment with advanced animations and unconventional design. Built as a playground for testing creative front-end techniques and challenging typical design patterns."
-                  video="./wbs.mp4"
+                  video="./experiment.mp4"
+                  link="https://experiment-website-90q.pages.dev/"
                   next="/learnPortfolio"
                 />
               </Transition>
@@ -68,6 +69,7 @@ const Router = () => {
                   title="Previous Portfolio"
                   description="An early portfolio built as part of my learning journey into front-end development and design. It reflects the foundations of my skills and marks the beginning of my exploration into web animation, layout, and user interface experimentation."
                   video="./old.mp4"
+                  link="https://old-portfolio-488.pages.dev/"
                   next="/learnWBS"
                 />
               </Transition>

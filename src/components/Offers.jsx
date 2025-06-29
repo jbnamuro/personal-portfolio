@@ -117,7 +117,7 @@ const Offers = () => {
             <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
             <h2 className="text-[4vh]/[5vh]">UIUX Design</h2>
           </div>
-          <p>N/01</p>
+          <p>N/02</p>
         </div>
         <div className="mt-5 desc-uiux">
           <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
@@ -134,7 +134,7 @@ const Offers = () => {
             <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
             <h2 className="text-[4vh]/[5vh]">Branding Design</h2>
           </div>
-          <p>N/01</p>
+          <p>N/03</p>
         </div>
         <div className="mt-5 desc-branding">
           <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
