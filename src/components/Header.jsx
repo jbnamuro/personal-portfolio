@@ -174,82 +174,84 @@ const Header = () => {
       ref={menuCont}
       className="fixed top-0 left-0 w-full z-100 flex justify-between px-5 py-2 text-xl"
     >
-      <div className="h-svh w-full absolute top-0 left-0 menu invisible flex flex-col bg-black">
-        <p
-          className="underline px-5 py-2 self-end cursor-pointer"
-          onClick={() => {
-            if (clickable) {
-              openMenu(false);
-              // console.log(menu);
-              changeClick(false);
-            }
-          }}
-        >
-          Close
-        </p>
-        <div className=" px-5 h-full flex flex-col justify-around">
-          <div className="purp">
-            <p className="opacity-50 text-[3vh]">(Philosophy)</p>
-            <h3 className="text-[6vh]">
-              Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
-            </h3>
-          </div>
-          <div className="w-full bg-white h-[1px] opacity-50"></div>
-          <div className="">
-            <div className="flex justify-between">
-              <div className="text-[4vh] navigate">
-                <p className="opacity-50 text-[3vh]">Navigate (04)</p>
-                <p
-                  className="cursor-pointer"
-                  onClick={() => {
-                    scrollToSection("projects");
-                  }}
-                >
-                  Projects
-                </p>
-                <p
-                  className="cursor-pointer"
-                  onClick={() => {
-                    scrollToSection("about");
-                  }}
-                >
-                  About
-                </p>
-                <p
-                  className="cursor-pointer"
-                  onClick={() => {
-                    scrollToSection("offers");
-                  }}
-                >
-                  Offers
-                </p>
-                <p
-                  className="cursor-pointer"
-                  onClick={() => {
-                    scrollToSection("contact");
-                  }}
-                >
-                  Contact
-                </p>
-              </div>
-              <div className="text-[4vh] connect">
-                <p className="opacity-50 text-[3vh]">Connect (2)</p>
-                <a
-                  href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/"
-                  target="_blank"
-                >
-                  LinkedIn
-                </a>
-                <br />
-                <a href="https://github.com/jbnamuro" target="_blank">
-                  Github
-                </a>
-              </div>
-              <div className="pointer-events-none"></div>
+      <div className="h-screen w-full absolute top-0 left-0 menu invisible ">
+        <div className="h-svh flex flex-col bg-black">
+          <p
+            className="underline px-5 py-2 self-end cursor-pointer"
+            onClick={() => {
+              if (clickable) {
+                openMenu(false);
+                // console.log(menu);
+                changeClick(false);
+              }
+            }}
+          >
+            Close
+          </p>
+          <div className=" px-5 h-full flex flex-col justify-around">
+            <div className="purp">
+              <p className="opacity-50 text-[3vh]">(Philosophy)</p>
+              <h3 className="text-[6vh]">
+                Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
+              </h3>
             </div>
-            <div className="mt-10 hello">
-              <p className="opacity-50 text-[3vh]">Say hello (1)</p>
-              <p className="text-[4vh]">jabarinamuro@gmail.com</p>
+            <div className="w-full bg-white h-[1px] opacity-50"></div>
+            <div className="">
+              <div className="flex justify-between">
+                <div className="text-[4vh] navigate">
+                  <p className="opacity-50 text-[3vh]">Navigate (04)</p>
+                  <p
+                    className="cursor-pointer"
+                    onClick={() => {
+                      scrollToSection("projects");
+                    }}
+                  >
+                    Projects
+                  </p>
+                  <p
+                    className="cursor-pointer"
+                    onClick={() => {
+                      scrollToSection("about");
+                    }}
+                  >
+                    About
+                  </p>
+                  <p
+                    className="cursor-pointer"
+                    onClick={() => {
+                      scrollToSection("offers");
+                    }}
+                  >
+                    Offers
+                  </p>
+                  <p
+                    className="cursor-pointer"
+                    onClick={() => {
+                      scrollToSection("contact");
+                    }}
+                  >
+                    Contact
+                  </p>
+                </div>
+                <div className="text-[4vh] connect">
+                  <p className="opacity-50 text-[3vh]">Connect (2)</p>
+                  <a
+                    href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/"
+                    target="_blank"
+                  >
+                    LinkedIn
+                  </a>
+                  <br />
+                  <a href="https://github.com/jbnamuro" target="_blank">
+                    Github
+                  </a>
+                </div>
+                <div className="pointer-events-none"></div>
+              </div>
+              <div className="mt-10 hello">
+                <p className="opacity-50 text-[3vh]">Say hello (1)</p>
+                <p className="text-[4vh]">jabarinamuro@gmail.com</p>
+              </div>
             </div>
           </div>
         </div>
