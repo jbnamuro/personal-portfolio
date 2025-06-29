@@ -191,7 +191,7 @@ const Header = () => {
           <div className="px-5 h-full flex flex-col justify-around">
             <div className="purp">
               <p className="opacity-50 text-[3vh]">(Philosophy)</p>
-              <h3 className="text-[6vh]">
+              <h3 className="text-[6vh]/[8vh]">
                 Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
               </h3>
             </div>
@@ -248,7 +248,7 @@ const Header = () => {
                 </div>
                 <div className="pointer-events-none"></div>
               </div>
-              <div className="mt-10 hello">
+              <div className="mt-5 hello">
                 <p className="opacity-50 text-[3vh]">Say hello (1)</p>
                 <p className="text-[4vh]">jabarinamuro@gmail.com</p>
               </div>
