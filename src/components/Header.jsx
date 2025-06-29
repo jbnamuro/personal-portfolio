@@ -253,7 +253,6 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="absolute -z-1 top-0 left-0 bg-black h-screen w-full"></div>
       </div>
       <p className="relative z-100"></p>
       <p
