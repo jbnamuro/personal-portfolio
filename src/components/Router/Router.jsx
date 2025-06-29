@@ -24,6 +24,7 @@ const Router = () => {
       root
       options={{
         autoRaf: false,
+        duration: 0.9,
       }}
       ref={lenisRef}
     >
