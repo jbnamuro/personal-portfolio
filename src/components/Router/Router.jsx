@@ -25,15 +25,7 @@ const Router = () => {
       options={{
         autoRaf: false,
         duration: 0.9,
-        // Mobile optimizations
-        touchMultiplier: 1.5,
-        smoothTouch: false, // Disable smooth scrolling on touch devices
-        infinite: false,
-        // Performance optimizations
-        lerp: 0.1, // Linear interpolation for smoother performance
-        syncTouch: true,
-        syncTouchLerp: 0.1,
-        touchInertiaMultiplier: 30,
+        touchMultiplier: 0,
       }}
       ref={lenisRef}
     >
