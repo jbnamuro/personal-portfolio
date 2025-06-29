@@ -174,7 +174,7 @@ const Header = () => {
       ref={menuCont}
       className="fixed top-0 left-0 w-full z-100 flex justify-between px-5 py-2 text-xl"
     >
-      <div className="h-screen w-full absolute top-0 left-0 menu invisible ">
+      <div className="h-screen bg-black w-full absolute top-0 left-0 menu invisible ">
         <div className="h-svh flex flex-col bg-black">
           <p
             className="underline px-5 py-2 self-end cursor-pointer"
@@ -188,7 +188,7 @@ const Header = () => {
           >
             Close
           </p>
-          <div className=" px-5 h-full flex flex-col justify-around">
+          <div className="px-5 h-full flex flex-col justify-around">
             <div className="purp">
               <p className="opacity-50 text-[3vh]">(Philosophy)</p>
               <h3 className="text-[6vh]">
