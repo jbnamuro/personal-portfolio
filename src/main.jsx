@@ -7,6 +7,7 @@ import { SplitText } from "gsap/SplitText";
 import Router from "./components/Router/Router.jsx";
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
+ScrollTrigger.normalizeScroll(true);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
