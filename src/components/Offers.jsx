@@ -19,6 +19,28 @@ const Offers = () => {
         })
       );
 
+      const pselectors = [".p1", ".p2", ".p3"];
+      pselectors.forEach((select) => {
+        SplitText.create(select, {
+          type: "lines",
+          mask: "lines",
+          autoSplit: true,
+          onSplit: (self) => {
+            gsap.from(self.lines, {
+              yPercent: 100,
+              stagger: 0.2,
+              duration: 1,
+              ease: "power3.out",
+              scrollTrigger: {
+                trigger: self.elements,
+                start: "top 80%",
+                // markers: true,
+              },
+            });
+          },
+        });
+      });
+
       splits.forEach((split) => {
         gsap.from(split.lines, {
           yPercent: 100,
@@ -71,9 +93,9 @@ const Offers = () => {
           </div>
           <p>N/01</p>
         </div>
-        <div className="mt-5 desc-web">
+        <div className="mt-5 desc-web p1">
           <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
-          <p className="text-[2.5vh]">
+          <p className="text-[2.5vh] ">
             I provide professional, functional website development tailored to
             help elevate your business to the next level.
           </p>
@@ -88,7 +110,7 @@ const Offers = () => {
           </div>
           <p>N/02</p>
         </div>
-        <div className="mt-5 desc-uiux">
+        <div className="mt-5 desc-uiux p2">
           <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
           <p className="text-[2.5vh]">
             I craft elegant and practical UI/UX designs that seamlessly align
@@ -105,7 +127,7 @@ const Offers = () => {
           </div>
           <p>N/03</p>
         </div>
-        <div className="mt-5 desc-branding">
+        <div className="mt-5 desc-branding p3">
           <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
           <p className="text-[2.5vh]">
             I deliver strategic, impactful branding design that strengthens your
