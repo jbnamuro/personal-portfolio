@@ -186,7 +186,11 @@ const Projects = () => {
       className="h-[380vh] project-wrapper flex justify-center relative z-10 bg-black w-full"
     >
       <div className="h-full absolute flex flex-col justify-evenly  items-center">
-        <div className="box1 w-[75vw] max-w-[600px] bg-black">
+        <div className="box1 w-[75vw] max-w-[600px] relative bg-black">
+          <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1"></div>
+          <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
+          <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
+
           <img
             src="./wbs.jpg"
             alt="wet basement systems website"
@@ -194,7 +198,10 @@ const Projects = () => {
             fetchPriority="high"
           />
         </div>
-        <div className="box2 w-[75vw] max-w-[600px] bg-black">
+        <div className="box2 w-[75vw] relative max-w-[600px] bg-black">
+          <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1"></div>
+          <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
+          <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
           <img
             src="./portfolio.jpg"
             alt="personal portfolio concept website"
@@ -202,7 +209,10 @@ const Projects = () => {
             fetchPriority="high"
           />
         </div>
-        <div className="box3 w-[75vw] max-w-[600px] bg-black">
+        <div className="box3 w-[75vw] relative max-w-[600px] bg-black">
+          <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1"></div>
+          <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
+          <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
           <img
             src="./prevport.jpg"
             alt="portfolio website"
