@@ -134,6 +134,7 @@ body {
   font-family: "OverusedGrotesk";
   background-color: black;
   color: white;
+  overscroll-behavior: none;
 }
 
 @utility text-scale {
