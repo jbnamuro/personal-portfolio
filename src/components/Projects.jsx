@@ -183,9 +183,9 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="h-600 project-wrapper flex justify-center relative z-10 bg-black w-full"
+      className="h-[380vh] project-wrapper flex justify-center relative z-10 bg-black w-full"
     >
-      <div className="h-full justify-around absolute flex flex-col  items-center">
+      <div className="h-full absolute flex flex-col justify-evenly  items-center">
         <div className="box1 w-[75vw] max-w-[600px] bg-black">
           <img
             src="./wbs.jpg"
