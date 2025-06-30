@@ -11,16 +11,16 @@ const Projects = () => {
   useGSAP(
     () => {
       if (!font) return;
-      gsap.to(".pin-here", {
-        scrollTrigger: {
-          trigger: ".pin-here",
-          pin: true,
-          start: "top top",
-          endTrigger: ".project-wrapper",
-          end: "bottom bottom",
-          // markers: true,
-        },
-      });
+      // gsap.to(".pin-here", {
+      //   scrollTrigger: {
+      //     trigger: ".pin-here",
+      //     pin: true,
+      //     start: "top top",
+      //     endTrigger: ".project-wrapper",
+      //     end: "bottom bottom",
+      //     // markers: true,
+      //   },
+      // });
 
       gsap.from(".img1", {
         scale: 0.8,
@@ -212,7 +212,7 @@ const Projects = () => {
         </div>
       </div>
       <div className="w-full">
-        <div className="pin-here h-screen flex flex-col justify-between">
+        <div className="sticky top-0 left-0 h-screen flex flex-col justify-between">
           <div className="px-5 bg-black pt-5">
             <h1 className="text-3xl">Projects</h1>
             <div className="flex justify-between">
