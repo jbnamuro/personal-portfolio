@@ -17,7 +17,7 @@ A modern, portfolio website showcasing frontend development and web design proje
 - **Styling**: Tailwind CSS 4
 - **Animations**: GSAP (GreenSock)
 - **Build Tool**: Vite
-- **SEO**: React Helmet Async, Structured Data
+- **SEO**: Static Meta Tags, Structured Data
 - **PWA**: Service Worker, Web App Manifest
 
 ## 📁 Project Structure
@@ -32,7 +32,6 @@ portfolio-new/
 │   └── assets/             # Images, videos, fonts
 ├── src/
 │   ├── components/
-│   │   ├── SEO.jsx         # SEO component
 │   │   ├── Header.jsx
 │   │   ├── Landing.jsx
 │   │   ├── Projects.jsx
