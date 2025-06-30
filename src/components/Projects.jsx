@@ -22,80 +22,80 @@ const Projects = () => {
       //   },
       // });
 
-      gsap.from(".img1", {
-        scale: 0.8,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".img1",
-          start: "top bottom",
-          scrub: true,
-          end: "40% center",
-          // markers: true,
-          onLeave: () => {
-            gsap.to(".img1", {
-              scale: 0.8,
-              ease: "none",
-              scrollTrigger: {
-                trigger: ".img1",
-                start: "60% center",
-                // markers: true,
-                scrub: true,
-                end: "bottom top",
-              },
-            });
-          },
-        },
-      });
+      // gsap.from(".img1", {
+      //   scale: 0.8,
+      //   ease: "none",
+      //   scrollTrigger: {
+      //     trigger: ".img1",
+      //     start: "top bottom",
+      //     scrub: true,
+      //     end: "40% center",
+      //     // markers: true,
+      //     onLeave: () => {
+      //       gsap.to(".img1", {
+      //         scale: 0.8,
+      //         ease: "none",
+      //         scrollTrigger: {
+      //           trigger: ".img1",
+      //           start: "60% center",
+      //           // markers: true,
+      //           scrub: true,
+      //           end: "bottom top",
+      //         },
+      //       });
+      //     },
+      //   },
+      // });
 
-      gsap.from(".img2", {
-        scale: 0.8,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".img2",
-          start: "top bottom",
-          scrub: true,
-          end: "40% center",
-          // markers: true,
-          onLeave: () => {
-            gsap.to(".img2", {
-              scale: 0.8,
-              ease: "none",
-              scrollTrigger: {
-                trigger: ".img2",
-                start: "60% center",
-                // markers: true,
-                scrub: true,
-                end: "bottom top",
-              },
-            });
-          },
-        },
-      });
+      // gsap.from(".img2", {
+      //   scale: 0.8,
+      //   ease: "none",
+      //   scrollTrigger: {
+      //     trigger: ".img2",
+      //     start: "top bottom",
+      //     scrub: true,
+      //     end: "40% center",
+      //     // markers: true,
+      //     onLeave: () => {
+      //       gsap.to(".img2", {
+      //         scale: 0.8,
+      //         ease: "none",
+      //         scrollTrigger: {
+      //           trigger: ".img2",
+      //           start: "60% center",
+      //           // markers: true,
+      //           scrub: true,
+      //           end: "bottom top",
+      //         },
+      //       });
+      //     },
+      //   },
+      // });
 
-      gsap.from(".img3", {
-        scale: 0.8,
-        ease: "none",
-        scrollTrigger: {
-          trigger: ".img3",
-          start: "top bottom",
-          scrub: true,
-          end: "40% center",
-          // markers: true,
-          onLeave: () => {
-            gsap.to(".img3", {
-              scale: 0.8,
-              ease: "none",
-              scrollTrigger: {
-                trigger: ".img3",
-                start: "60% center",
-                // markers: true,
-                scrub: true,
-                end: "bottom top",
-              },
-            });
-          },
-        },
-      });
+      // gsap.from(".img3", {
+      //   scale: 0.8,
+      //   ease: "none",
+      //   scrollTrigger: {
+      //     trigger: ".img3",
+      //     start: "top bottom",
+      //     scrub: true,
+      //     end: "40% center",
+      //     // markers: true,
+      //     onLeave: () => {
+      //       gsap.to(".img3", {
+      //         scale: 0.8,
+      //         ease: "none",
+      //         scrollTrigger: {
+      //           trigger: ".img3",
+      //           start: "60% center",
+      //           // markers: true,
+      //           scrub: true,
+      //           end: "bottom top",
+      //         },
+      //       });
+      //     },
+      //   },
+      // });
 
       const titles = SplitText.create(".first-split", {
         type: "words",
