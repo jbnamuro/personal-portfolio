@@ -82,7 +82,9 @@ const About = () => {
   );
   return (
     <div id="about" className="bg-black pt-5 px-5">
-      <h2 className="abt-title opacity-50 text-xl">About Me</h2>
+      <h2 className="abt-title opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl">
+        (About Me)
+      </h2>
       <p className="abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
         I'm Jabari, a creative frontend developer fueled by a passion for
         building interactive experiences that challenge the norm. Obsessed with
