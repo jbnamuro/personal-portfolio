@@ -1,0 +1,21 @@
+{
+  "name": "Jabari Namuro - Frontend Developer & Web Designer",
+  "short_name": "Jabari Namuro",
+  "description": "Frontend developer and web designer based in Toronto. Specializing in modern web development, animations, and creative user experiences.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "lang": "en",
+  "dir": "ltr"
+} 
