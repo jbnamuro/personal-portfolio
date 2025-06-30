@@ -241,7 +241,7 @@ const Projects = () => {
                 Learn More
               </p>
               <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out">
-                →
+                (Click Here) →
               </p>
             </div>
             <div className="w-full h-[1px] my-2 relative">
