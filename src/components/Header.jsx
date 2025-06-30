@@ -189,20 +189,20 @@ const Header = () => {
           >
             Close
           </p>
-          <div className="px-5 h-full flex flex-col justify-around">
-            <div className="purp">
-              <p className="opacity-50 text-[3vh]">(Philosophy)</p>
-              <h3 className="text-[6vh]/[7vh]">
+          <div className="px-5 h-full flex flex-col justify-between">
+            <div className="purp h-2/5">
+              <p className="opacity-50 ">(Philosophy)</p>
+              <h3 className="text-[6vh]/[7vh] font-medium">
                 Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
               </h3>
             </div>
             <div className="w-full bg-white h-[1px] opacity-50"></div>
-            <div className="">
-              <div className="flex justify-between">
-                <div className="text-[4vh] navigate">
-                  <p className="opacity-50 text-[3vh]">Navigate (04)</p>
+            <div className="h-3/5 text-[min(8vw,4vh)] mt-2 flex flex-col justify-around">
+              <div className="flex">
+                <div className="navigate w-1/2">
+                  <p className="opacity-50 text-[2vh]/[2vh]">Navigate (04)</p>
                   <p
-                    className="cursor-pointer"
+                    className="cursor-pointer mb-[1vh]"
                     onClick={() => {
                       scrollToSection("projects");
                     }}
@@ -210,7 +210,7 @@ const Header = () => {
                     Projects
                   </p>
                   <p
-                    className="cursor-pointer"
+                    className="cursor-pointer mb-[1vh]"
                     onClick={() => {
                       scrollToSection("about");
                     }}
@@ -218,7 +218,7 @@ const Header = () => {
                     About
                   </p>
                   <p
-                    className="cursor-pointer"
+                    className="cursor-pointer mb-[1vh]"
                     onClick={() => {
                       scrollToSection("offers");
                     }}
@@ -234,8 +234,8 @@ const Header = () => {
                     Contact
                   </p>
                 </div>
-                <div className="text-[4vh] connect">
-                  <p className="opacity-50 text-[3vh]">Projects (3)</p>
+                <div className=" connect">
+                  <p className="opacity-50 text-[2vh]/[2vh]">Projects (3)</p>
                   {/* <Link
               to="/learnWBS"
               className="link1 h-full absolute top-0 left-0 w-full z-100"
@@ -248,23 +248,23 @@ const Header = () => {
               to="/learnPortfolio"
               className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
             ></Link> */}
-                  <Link to="/learnWBS" className="">
-                    WBS
-                  </Link>
-                  <br />
-                  <Link to="/learnExperiment" className="">
-                    Experiment
-                  </Link>
-                  <br />
-                  <Link to="/learnPortfolio" className="">
-                    Portfolio
-                  </Link>
+                  <div className="flex flex-col">
+                    <Link to="/learnWBS" className="mb-[1vh]">
+                      WBS
+                    </Link>
+                    <Link to="/learnExperiment" className=" mb-[1vh]">
+                      Experiment
+                    </Link>
+                    <Link to="/learnPortfolio" className="">
+                      Portfolio
+                    </Link>
+                  </div>
                 </div>
                 <div className="pointer-events-none"></div>
               </div>
-              <div className="mt-5 hello">
-                <p className="opacity-50 text-[3vh]">Say hello (1)</p>
-                <p className="text-[4vh]">jabarinamuro@gmail.com</p>
+              <div className="hello">
+                <p className="opacity-50 text-[2vh]/[2vh] ">Say hello (1)</p>
+                <p className="">jabarinamuro@gmail.com</p>
               </div>
             </div>
           </div>

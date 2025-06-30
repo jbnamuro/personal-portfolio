@@ -12,13 +12,13 @@ const Landing = () => {
     () => {
       if (!font) return;
       gsap.set(".white-box", {
-        y: 20,
+        y: 50,
       });
       gsap.to(".white-box", {
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: "power2.out",
+        ease: "power3.out",
       });
 
       const landing = SplitText.create(".landing-info", {

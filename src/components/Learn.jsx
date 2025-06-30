@@ -88,7 +88,7 @@ const Learn = (props) => {
         </div>
         <div className="mt-5 desc-web">
           <p className="opacity-50 text-[2vh]/[2vh]">(Description)</p>
-          <p className="text-[5vh]/[5.5vh]">
+          <p className="text-[4vh]/[4.5vh]">
             {props.description}
             {/* A clean, straightforward website built for a Toronto-based
               waterproofing company, focusing on clarity, ease of navigation, and
