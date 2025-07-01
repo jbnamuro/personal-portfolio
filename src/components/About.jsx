@@ -85,7 +85,7 @@ const About = () => {
       <h2 className="ml-5 abt-title top-0 left-0 opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl absolute">
         (About Me)
       </h2>
-      <p className="pt-[23px] md:pt-[25px] lg:pt-[29px] xl:pt-[35px] abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
+      <p className="pt-[28px] md:pt-[30px] lg:pt-[34px] xl:pt-[40px] abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
         I'm Jabari, a creative frontend developer fueled by a passion for
         building interactive experiences that challenge the norm. Obsessed with
         crafting high-performing, visually engaging work and always chasing the
