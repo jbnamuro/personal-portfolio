@@ -113,8 +113,8 @@ const Footer = () => {
   );
   return (
     <div id="contact" ref={footerRef}>
-      <div className="h-svh bg-black px-10 py-10 text-[4vh] footer flex flex-col justify-between">
-        <div className="bg-white text-black p-5">
+      <div className="h-svh bg-black px-5 py-10 text-[4vh] footer flex flex-col justify-between">
+        <div className="">
           <div className="flex justify-between">
             <div className="navigate">
               <p className="opacity-50 text-[3vh] text-nowrap">Navigate (04)</p>
