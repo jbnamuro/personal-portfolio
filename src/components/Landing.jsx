@@ -61,6 +61,18 @@ const Landing = () => {
             pinSpacing: false,
           },
         });
+      } else {
+        gsap.to(".scale-this", {
+          scrollTrigger: {
+            trigger: ".landing-cont",
+            start: "top top",
+            end: "bottom top",
+            // markers: true,
+            scrub: true,
+            pin: true,
+            pinSpacing: false,
+          },
+        });
       }
     },
     { scope: homeRef.current, dependencies: [font] }
