@@ -259,7 +259,7 @@ const Projects = () => {
               <div className="w-0 h-full bg-white top-0 left-0 absolute group-hover:w-full duration-500 ease-in-out"></div>
             </div>
             <div className="flex justify-between">
-              <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl  relative font-medium">
+              <div className="text-[7vw]/[7vw] md:text-5xl lg:text-6xl xl:text-7xl  relative font-medium">
                 <h3 className="absolute mix-blend-difference first-split text-nowrap top-0 left-0">
                   Wet Basement Systems
                 </h3>
@@ -271,7 +271,7 @@ const Projects = () => {
                 </h3>
               </div>
 
-              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl  relative opacity-0 pointer-events-none">
+              <h2 className="text-[7vw]/[7vw] md:text-5xl lg:text-6xl xl:text-7xl  relative opacity-0 pointer-events-none">
                 easter egg
               </h2>
               <div className="">
