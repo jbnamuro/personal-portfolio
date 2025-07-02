@@ -17,7 +17,7 @@ const Landing = () => {
       gsap.to(".white-box", {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 2,
         ease: "power3.out",
       });
 
@@ -41,7 +41,7 @@ const Landing = () => {
           gsap.from(self.lines, {
             yPercent: 100,
             stagger: 0.1,
-            duration: 1,
+            duration: 2,
             ease: "power4.out",
           });
         },
