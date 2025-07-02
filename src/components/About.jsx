@@ -82,7 +82,7 @@ const About = () => {
   );
   return (
     <div id="about" className="bg-black mt-5 relative px-5">
-      <h2 className="ml-5 abt-title top-0 left-0 opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl absolute">
+      <h2 className="ml-5 font-light abt-title top-0 left-0 opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl absolute">
         (About Me)
       </h2>
       <p className="pt-[28px] md:pt-[30px] lg:pt-[34px] xl:pt-[40px] abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
@@ -91,10 +91,10 @@ const About = () => {
         crafting high-performing, visually engaging work and always chasing the
         next level of excellence.
       </p>
-      <p className="mt-5 met opacity-50 text-[3vw] md:text-lg lg:text-xl xl:text-2xl">
+      <p className="font-light mt-5 met opacity-50 text-[3vw] md:text-lg lg:text-xl xl:text-2xl">
         Meticulously crafting
       </p>
-      <p className="opacity-50 vis text-[3vw] md:text-lg lg:text-xl xl:text-2xl pb-5">
+      <p className="font-light opacity-50 vis text-[3vw] md:text-lg lg:text-xl xl:text-2xl pb-5">
         (Vision) → (Concept) → (Composition) → (Refinement) → (Delivery)
       </p>
     </div>

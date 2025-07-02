@@ -183,7 +183,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="h-[250vh] project-wrapper flex justify-center relative z-10 bg-black w-full"
+      className="h-[250vh] font-light project-wrapper flex justify-center relative z-10 bg-black w-full"
     >
       <div className="h-full absolute flex flex-col justify-evenly  items-center">
         <div className="box1 w-[75vw] max-w-[600px] relative bg-black">
@@ -224,7 +224,7 @@ const Projects = () => {
       <div className="w-full">
         <div className="sticky top-0 left-0 h-screen flex flex-col justify-between">
           <div className="px-5 bg-black pt-5">
-            <h1 className="text-3xl">Projects</h1>
+            <h1 className="text-3xl font-normal">Projects</h1>
             <div className="flex justify-between">
               <p className="opacity-50 text-[2.5vw]/[3.5vw] md:text-xl">
                 Tech meets design — scroll through my digital experiments.
@@ -259,7 +259,7 @@ const Projects = () => {
               <div className="w-0 h-full bg-white top-0 left-0 absolute group-hover:w-full duration-500 ease-in-out"></div>
             </div>
             <div className="flex justify-between">
-              <div className="text-3xl relative">
+              <div className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl  relative font-medium">
                 <h3 className="absolute mix-blend-difference first-split text-nowrap top-0 left-0">
                   Wet Basement Systems
                 </h3>
@@ -271,7 +271,7 @@ const Projects = () => {
                 </h3>
               </div>
 
-              <h2 className="text-3xl relative opacity-0 pointer-events-none">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl  relative opacity-0 pointer-events-none">
                 easter egg
               </h2>
               <div className="">

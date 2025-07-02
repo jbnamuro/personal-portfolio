@@ -88,14 +88,18 @@ const Offers = () => {
       <div className="h-[50vh]  w-full flex card1 bg-black  relative flex-col justify-center px-5">
         <div className="flex justify-between items-center">
           <div className="title-web">
-            <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
+            <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
+              (Offer)
+            </p>
             <h2 className="text-[4vh]/[5vh] ">Website Development</h2>
           </div>
           <p>N/01</p>
         </div>
         <div className="mt-5 desc-web p1">
-          <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
-          <p className="text-[2.5vh] ">
+          <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
+            (Description)
+          </p>
+          <p className="text-[2.5vh] font-light">
             I provide professional, functional website development tailored to
             help elevate your business to the next level.
           </p>
@@ -105,14 +109,18 @@ const Offers = () => {
       <div className=" h-[50vh]  relative card2 w-full left-0  bg-[#0A0A0A] flex flex-col justify-center px-5">
         <div className="flex justify-between items-center">
           <div className="title-uiux">
-            <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
+            <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
+              (Offer)
+            </p>
             <h2 className="text-[4vh]/[5vh]">UIUX Design</h2>
           </div>
           <p>N/02</p>
         </div>
         <div className="mt-5 desc-uiux p2">
-          <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
-          <p className="text-[2.5vh]">
+          <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
+            (Description)
+          </p>
+          <p className="text-[2.5vh] font-light">
             I craft elegant and practical UI/UX designs that seamlessly align
             with each client's vision and user needs.
           </p>
@@ -122,14 +130,18 @@ const Offers = () => {
       <div className=" relative w-full card3 left-0 h-[50vh]   bg-[#141414] flex flex-col justify-center px-5">
         <div className="flex justify-between items-center">
           <div className="title-branding">
-            <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Offer)</p>
+            <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
+              (Offer)
+            </p>
             <h2 className="text-[4vh]/[5vh]">Branding Design</h2>
           </div>
           <p>N/03</p>
         </div>
         <div className="mt-5 desc-branding p3">
-          <p className="opacity-50 text-[1.5vh]/[1.5vh]">(Description)</p>
-          <p className="text-[2.5vh]">
+          <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
+            (Description)
+          </p>
+          <p className="font-light text-[2.5vh]">
             I deliver strategic, impactful branding design that strengthens your
             business identity and sets you apart.
           </p>

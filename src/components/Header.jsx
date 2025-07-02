@@ -191,7 +191,9 @@ const Header = () => {
           </p>
           <div className="px-5 h-full flex flex-col justify-between">
             <div className="purp h-2/5">
-              <p className="opacity-50 ">(Philosophy)</p>
+              <p className="opacity-50 text-[2vh]/[3vh]  font-light">
+                (Philosophy)
+              </p>
               <h3 className="text-[6vh]/[7vh] font-medium">
                 Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
               </h3>
@@ -200,7 +202,9 @@ const Header = () => {
             <div className="h-3/5 text-[min(8vw,4vh)] mt-2 flex flex-col justify-around">
               <div className="flex">
                 <div className="navigate w-1/2">
-                  <p className="opacity-50 text-[2vh]/[2vh]">Navigate (04)</p>
+                  <p className="opacity-50 text-[2vh]/[3vh] font-light">
+                    Navigate (04)
+                  </p>
                   <p
                     className="cursor-pointer mb-[1vh]"
                     onClick={() => {
@@ -235,7 +239,9 @@ const Header = () => {
                   </p>
                 </div>
                 <div className=" connect">
-                  <p className="opacity-50 text-[2vh]/[2vh]">Projects (3)</p>
+                  <p className="opacity-50 text-[2vh]/[3vh] font-light">
+                    Projects (3)
+                  </p>
                   {/* <Link
               to="/learnWBS"
               className="link1 h-full absolute top-0 left-0 w-full z-100"
@@ -263,7 +269,9 @@ const Header = () => {
                 <div className="pointer-events-none"></div>
               </div>
               <div className="hello">
-                <p className="opacity-50 text-[2vh]/[2vh] ">Say hello (1)</p>
+                <p className="opacity-50 text-[2vh]/[3vh] font-light">
+                  Say hello (1)
+                </p>
                 <p className="">jabarinamuro@gmail.com</p>
               </div>
             </div>
