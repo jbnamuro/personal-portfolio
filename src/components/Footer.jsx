@@ -108,12 +108,24 @@ const Footer = () => {
           // markers: true,
         },
       });
+
+      gsap.to(".line-anim", {
+        width: "100%",
+        duration: 2,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: ".line-anim",
+          start: "top 90%",
+          // markers: true,
+        },
+      });
     },
     { dependencies: [font], scope: footerRef }
   );
   return (
     <div id="contact" ref={footerRef}>
-      <div className="h-svh bg-black px-5 py-10 text-[4vh] footer flex flex-col justify-between">
+      <div className="h-svh bg-black px-5 pb-5 text-[4vh] footer flex flex-col justify-between">
+        <div className="h-[1px] line-anim w-[0%] bg-white opacity-50"></div>
         <div className="">
           <div className="flex justify-between">
             <div className="navigate">
@@ -171,7 +183,7 @@ const Footer = () => {
             <p>jabarinamuro@gmail.com</p>
           </div>
         </div>
-        <div className="flex justify-between opacity-50">
+        <div className="flex text-lg md:text-xl lg:text-2xl xl:text-3xl justify-between opacity-50">
           <p>JN</p>
           <p>&copy;2025</p>
         </div>

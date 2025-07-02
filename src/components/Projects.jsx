@@ -226,7 +226,7 @@ const Projects = () => {
           <div className="px-5 bg-black pt-5">
             <h1 className="text-3xl">Projects</h1>
             <div className="flex justify-between">
-              <p className="opacity-50 text-[3.5vw]/[3.5vw] md:text-xl">
+              <p className="opacity-50 text-[2.5vw]/[3.5vw] md:text-xl">
                 Tech meets design — scroll through my digital experiments.
               </p>
               <p className="opacity-50 hidden">(scroll)</p>
@@ -246,7 +246,7 @@ const Projects = () => {
               to="/learnPortfolio"
               className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
             ></Link>
-            <div className="flex justify-between">
+            <div className="flex pt-2 justify-between">
               <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out">
                 Learn More
               </p>

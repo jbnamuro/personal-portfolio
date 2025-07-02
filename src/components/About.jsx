@@ -22,7 +22,7 @@ const About = () => {
         stagger: 0.05,
         scrollTrigger: {
           trigger: ".abt-title",
-          start: "top 60%",
+          start: "top 80%",
           // toggleActions: "play none none reverse",
         },
       });
