@@ -87,11 +87,11 @@ const Landing = () => {
             </div>
           </div>
           <div className="text-center mt-10 bottom-2 w-[70%] landing-info max-w-150">
-            <p className="font-light text-[2vw] md:text-lg opacity-0 land-text1">
+            <p className="font-light text-[3.5vw] md:text-lg opacity-0 land-text1">
               CRAFTING ANIMATED, INTERACTIVE WEB EXPERIENCES THAT ELEVATE BRANDS
               AND CAPTIVATE USERS.
             </p>
-            <p className="mt-2 font-light text-[2vw] md:text-lg land-text2 opacity-0">
+            <p className="mt-2 font-light text-[3.5vw] md:text-lg land-text2 opacity-0">
               (scroll)
             </p>
           </div>
