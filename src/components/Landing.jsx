@@ -47,19 +47,21 @@ const Landing = () => {
         },
       });
 
-      gsap.to(".scale-this", {
-        y: -200,
-        scale: 0.9,
-        scrollTrigger: {
-          trigger: ".landing-cont",
-          start: "top top",
-          end: "bottom top",
-          // markers: "true",
-          scrub: true,
-          pin: true,
-          pinSpacing: false,
-        },
-      });
+      if (!ScrollTrigger.isTouch) {
+        gsap.to(".scale-this", {
+          y: -200,
+          scale: 0.9,
+          scrollTrigger: {
+            trigger: ".landing-cont",
+            start: "top top",
+            end: "bottom top",
+            // markers: true,
+            scrub: true,
+            pin: true,
+            pinSpacing: false,
+          },
+        });
+      }
     },
     { scope: homeRef.current, dependencies: [font] }
   );

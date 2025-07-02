@@ -307,7 +307,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="w-full h-[1px] my-2 relative">
-              <div className="w-0 line-anim2 h-full bg-white opacity-50 top-0 left-0 absolute"></div>
+              <div className="w-full line-anim2 h-full bg-white opacity-50 top-0 left-0 absolute"></div>
               <div className="w-0 h-full bg-white top-0 left-0 absolute group-hover:w-full duration-500 ease-in-out"></div>
             </div>
             <div className="flex justify-between">
