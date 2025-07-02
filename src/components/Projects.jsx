@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -8,6 +8,7 @@ import { SplitText } from "gsap/SplitText";
 
 const Projects = () => {
   const font = useFont();
+  const projectRef = useRef(null);
   useGSAP(
     () => {
       if (!font) return;
@@ -228,10 +229,11 @@ const Projects = () => {
         },
       });
     },
-    { dependencies: [font] }
+    { dependencies: [font], scope: projectRef }
   );
   return (
     <div
+      ref={projectRef}
       id="projects"
       className="h-[250vh] font-light project-wrapper flex justify-center relative z-10 bg-black w-full"
     >
