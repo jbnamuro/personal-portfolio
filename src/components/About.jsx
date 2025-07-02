@@ -16,7 +16,7 @@ const About = () => {
       });
 
       gsap.from(abttitle.words, {
-        yPercent: 100,
+        yPercent: -100,
         duration: 1,
         ease: "power4.out",
         stagger: 0.05,
