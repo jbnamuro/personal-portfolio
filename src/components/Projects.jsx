@@ -97,6 +97,55 @@ const Projects = () => {
       //   },
       // });
 
+      const anims = [".projects", ".learn", ".click"];
+      anims.forEach((anim) => {
+        SplitText.create(anim, {
+          type: "lines",
+          mask: "lines",
+          onSplit: (self) => {
+            gsap.from(self.lines, {
+              yPercent: 100,
+              duration: 1,
+              ease: "power4.out",
+              scrollTrigger: {
+                trigger: self.elements,
+                start: "top 80%",
+              },
+            });
+          },
+        });
+      });
+
+      const lineanims = [".line-anim", ".line-anim2"];
+      lineanims.forEach((self) => {
+        gsap.to(self, {
+          width: "100%",
+          duration: 1.5,
+          ease: "power4.out",
+          scrollTrigger: {
+            trigger: self,
+            start: "top 80%",
+          },
+        });
+      });
+
+      SplitText.create(".scroll-through", {
+        type: "words",
+        mask: "words",
+        onSplit: (self) => {
+          gsap.from(self.words, {
+            stagger: 0.05,
+            yPercent: 100,
+            duration: 1,
+            ease: "power4.out",
+            scrollTrigger: {
+              trigger: self.elements,
+              start: "top 80%",
+            },
+          });
+        },
+      });
+
       const titles = SplitText.create(".first-split", {
         type: "words",
         mask: "words",
@@ -109,6 +158,7 @@ const Projects = () => {
         type: "words",
         mask: "words",
       });
+
       gsap.set(titles2.words, {
         yPercent: 100,
       });
@@ -187,9 +237,9 @@ const Projects = () => {
     >
       <div className="h-full absolute flex flex-col justify-evenly  items-center">
         <div className="box1 w-[75vw] max-w-[600px] relative bg-black">
-          <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1 opacity-50"></div>
-          <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
-          <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
+          {/* <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1 opacity-50"></div> */}
+          {/* <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
+          {/* <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
 
           <img
             src="./wbs.jpg"
@@ -199,9 +249,9 @@ const Projects = () => {
           />
         </div>
         <div className="box2 w-[75vw] relative max-w-[600px] bg-black">
-          <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1 opacity-50"></div>
-          <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
-          <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
+          {/* <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1 opacity-50"></div> */}
+          {/* <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
+          {/* <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
           <img
             src="./portfolio.jpg"
             alt="personal portfolio concept website"
@@ -210,9 +260,9 @@ const Projects = () => {
           />
         </div>
         <div className="box3 w-[75vw] relative max-w-[600px] bg-black">
-          <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1 opacity-50"></div>
-          <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
-          <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div>
+          {/* <div className="absolute h-[calc(100%+30px)] w-[calc(100%+30px)] -z-1 top-[50%] left-[50%] -translate-[50%] border-1 opacity-50"></div> */}
+          {/* <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
+          {/* <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
           <img
             src="./prevport.jpg"
             alt="portfolio website"
@@ -224,14 +274,14 @@ const Projects = () => {
       <div className="w-full">
         <div className="sticky top-0 left-0 h-screen flex flex-col justify-between">
           <div className="px-5 bg-black pt-5">
-            <h1 className="text-3xl font-normal">Projects</h1>
+            <h1 className="text-3xl font-normal projects mb-1">Projects</h1>
             <div className="flex justify-between">
-              <p className="opacity-50 text-[2.5vw]/[3.5vw] md:text-xl">
+              <p className="opacity-50 text-[2.5vw]/[3.5vw] md:text-xl scroll-through">
                 Tech meets design — scroll through my digital experiments.
               </p>
               <p className="opacity-50 hidden">(scroll)</p>
             </div>
-            <div className="w-full h-[1px] mt-2 opacity-50 bg-white"></div>
+            <div className="w-0 line-anim h-[1px] mt-2 opacity-50 bg-white"></div>
           </div>
           <div className="pb-5 w-full px-5 group bg-black relative">
             <Link
@@ -247,15 +297,15 @@ const Projects = () => {
               className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
             ></Link>
             <div className="flex pt-2 justify-between">
-              <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out">
+              <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out learn">
                 Learn More
               </p>
-              <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out">
+              <p className="opacity-50 group-hover:opacity-100 duration-500 ease-in-out click">
                 (Click Here) →
               </p>
             </div>
             <div className="w-full h-[1px] my-2 relative">
-              <div className="w-full h-full bg-white opacity-50 top-0 left-0 absolute"></div>
+              <div className="w-0 line-anim2 h-full bg-white opacity-50 top-0 left-0 absolute"></div>
               <div className="w-0 h-full bg-white top-0 left-0 absolute group-hover:w-full duration-500 ease-in-out"></div>
             </div>
             <div className="flex justify-between">
