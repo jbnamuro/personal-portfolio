@@ -69,8 +69,8 @@ const Landing = () => {
         <div className="w-full h-full flex justify-center items-center flex-col scale-this ">
           <div className="bg-white white-box text-[3vw]/[3vw] opacity-0 md:text-xl p-4 aspect-5/6  max-h-100 max-w-150 flex font-light flex-col justify-between w-[75%] text-black">
             <div className="opacity-50 flex justify-between">
-              <p className="">Jabari Namuro</p>
-              <p>Based in Canada</p>
+              <p className="text-[3.5vw]/[3.5vw] md:text-xl">Jabari Namuro</p>
+              <p className="text-[3.5vw]/[3.5vw] md:text-xl">Based in Canada</p>
             </div>
             <div>
               <p>Digital Developer/Designer</p>
@@ -87,7 +87,7 @@ const Landing = () => {
             </div>
           </div>
           <div className="text-center mt-10 bottom-2 w-[70%] landing-info max-w-150">
-            <p className="font-bold text-[2vw] md:text-lg opacity-0 land-text1">
+            <p className="font-medium text-[2vw] md:text-lg opacity-0 land-text1">
               CRAFTING ANIMATED, INTERACTIVE WEB EXPERIENCES THAT ELEVATE BRANDS
               AND CAPTIVATE USERS.
             </p>
