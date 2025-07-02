@@ -183,7 +183,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="h-[300vh] project-wrapper flex justify-center relative z-10 bg-black w-full"
+      className="h-[250vh] project-wrapper flex justify-center relative z-10 bg-black w-full"
     >
       <div className="h-full absolute flex flex-col justify-evenly  items-center">
         <div className="box1 w-[75vw] max-w-[600px] relative bg-black">
