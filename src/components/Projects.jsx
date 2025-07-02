@@ -98,7 +98,7 @@ const Projects = () => {
       //   },
       // });
 
-      const anims = [".projects", ".learn", ".click"];
+      const anims = [".projects"];
       anims.forEach((anim) => {
         SplitText.create(anim, {
           type: "lines",
@@ -117,7 +117,7 @@ const Projects = () => {
         });
       });
 
-      const lineanims = [".line-anim", ".line-anim2"];
+      const lineanims = [".line-anim"];
       lineanims.forEach((self) => {
         gsap.to(self, {
           width: "100%",
