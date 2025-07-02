@@ -48,6 +48,7 @@ const Landing = () => {
       });
 
       gsap.to(".scale-this", {
+        y: -200,
         scale: 0.9,
         scrollTrigger: {
           trigger: ".landing-cont",
