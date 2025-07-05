@@ -135,7 +135,7 @@ const Projects = () => {
         mask: "words",
         onSplit: (self) => {
           gsap.from(self.words, {
-            stagger: 0.05,
+            stagger: 0.02,
             yPercent: 100,
             duration: 1,
             ease: "power4.out",
@@ -278,7 +278,7 @@ const Projects = () => {
           <div className="px-5 bg-black pt-5">
             <h1 className="text-3xl font-normal projects mb-1">Projects</h1>
             <div className="flex justify-between">
-              <p className="opacity-50 text-[2.5vw]/[3.5vw] md:text-xl scroll-through">
+              <p className="opacity-50 text-[3.5vw]/[4.5vw] md:text-xl scroll-through">
                 Tech meets design — scroll through my digital experiments.
               </p>
               <p className="opacity-50 hidden">(scroll)</p>
