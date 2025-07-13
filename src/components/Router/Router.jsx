@@ -75,7 +75,7 @@ const Router = () => {
               <Transition>
                 <Learn
                   title="Corner Coffee"
-                  description="My goal for this cafe website was to blend modern design with effortless usability. This creates an inviting online atmosphere that draws customers in and makes navigation a breeze, boosting their desire to visit. Focused on visual impact and ease of use."
+                  description="This cafe website was designed to blend modern stylization with effortless usability. This creates an inviting online atmosphere that draws customers in and makes navigation a breeze, boosting their desire to visit. Focused on visual impact and ease of use."
                   video="./corner.mp4"
                   link="https://cafe-website-sage.vercel.app/"
                   next="/learnWBS"
