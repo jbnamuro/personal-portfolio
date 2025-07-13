@@ -244,8 +244,8 @@ const Projects = () => {
           {/* <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
 
           <img
-            src="./wbs.jpg"
-            alt="wet basement systems website"
+            src="./corner.jpg"
+            alt="Corner Coffee cafe website"
             className="img1"
             fetchPriority="high"
           />
@@ -255,8 +255,8 @@ const Projects = () => {
           {/* <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
           {/* <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
           <img
-            src="./portfolio.jpg"
-            alt="personal portfolio concept website"
+            src="./wbs.jpg"
+            alt="wet basement systems website"
             className="img2"
             fetchPriority="high"
           />
@@ -266,8 +266,8 @@ const Projects = () => {
           {/* <div className="absolute h-[calc(100%+32px)] w-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
           {/* <div className="absolute w-[calc(100%+32px)] h-full bg-black -z-1 top-[50%] left-[50%] -translate-[50%]"></div> */}
           <img
-            src="./prevport.jpg"
-            alt="portfolio website"
+            src="./portfolio.jpg"
+            alt="personal portfolio concept website"
             className="img3"
             fetchPriority="high"
           />
@@ -287,15 +287,15 @@ const Projects = () => {
           </div>
           <div className="pb-5 w-full px-5 group bg-black relative">
             <Link
-              to="/learnWBS"
+              to="/learnCafe"
               className="link1 h-full absolute top-0 left-0 w-full z-100"
             ></Link>
             <Link
-              to="/learnExperiment"
+              to="/learnWBS"
               className="link2 h-full absolute top-0 left-0 w-full hidden z-100"
             ></Link>
             <Link
-              to="/learnPortfolio"
+              to="/learnExperiment"
               className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
             ></Link>
             <div className="flex pt-2 justify-between">
@@ -313,13 +313,13 @@ const Projects = () => {
             <div className="flex justify-between">
               <div className="text-[7vw]/[7vw] md:text-5xl lg:text-6xl  relative font-normal">
                 <h3 className="absolute mix-blend-difference first-split text-nowrap top-0 left-0">
-                  Wet Basement Systems
+                  Corner Coffee
                 </h3>
                 <h3 className="top-0 left-0 mix-blend-difference second-split absolute text-nowrap">
-                  Animation Experiment
+                  Wet Basement Systems
                 </h3>
                 <h3 className="top-0 left-0 mix-blend-difference third-split absolute text-nowrap">
-                  Previous Portfolio
+                  Animation Experiment
                 </h3>
               </div>
 

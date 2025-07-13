@@ -255,14 +255,14 @@ const Header = () => {
               className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
             ></Link> */}
                   <div className="flex flex-col">
+                    <Link to="/learnCafe" className="">
+                      Corner Coffee
+                    </Link>
                     <Link to="/learnWBS" className="mb-[1vh]">
                       WBS
                     </Link>
                     <Link to="/learnExperiment" className=" mb-[1vh]">
                       Experiment
-                    </Link>
-                    <Link to="/learnPortfolio" className="">
-                      Portfolio
                     </Link>
                   </div>
                 </div>
