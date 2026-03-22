@@ -112,7 +112,7 @@ const Offers = () => {
             <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
               (Offer)
             </p>
-            <h2 className="text-[4vh]/[5vh]">UIUX Design</h2>
+            <h2 className="text-[4vh]/[5vh]">UI/UX Design</h2>
           </div>
           <p>N/02</p>
         </div>
@@ -133,7 +133,7 @@ const Offers = () => {
             <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
               (Offer)
             </p>
-            <h2 className="text-[4vh]/[5vh]">Branding Design</h2>
+            <h2 className="text-[4vh]/[5vh]">Full-Stack Development</h2>
           </div>
           <p>N/03</p>
         </div>
@@ -142,8 +142,8 @@ const Offers = () => {
             (Description)
           </p>
           <p className="font-light text-[2.5vh]">
-            I deliver strategic, impactful branding design that strengthens your
-            business identity and sets you apart.
+            I build complete, end-to-end solutions — bringing together solid
+            engineering and polished design to ship products that work and look great.
           </p>
         </div>
       </div>

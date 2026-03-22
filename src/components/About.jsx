@@ -78,24 +78,23 @@ const About = () => {
         },
       });
     },
-    { dependencies: [font] }
+    { dependencies: [font] },
   );
   return (
-    <div id="about" className="bg-black mt-15 relative px-5">
-      <h2 className="ml-5 font-light abt-title top-0 left-0 opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl absolute">
+    <div id="about" className="bg-black pt-15 relative px-5">
+      <h2 className="ml-5 font-light abt-title top-15 left-0 opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl absolute">
         (About Me)
       </h2>
       <p className="pt-[28px] md:pt-[30px] lg:pt-[34px] xl:pt-[40px] abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
-        I'm Jabari, a creative frontend developer fueled by a passion for
-        building interactive experiences that challenge the norm. Obsessed with
-        crafting high-performing, visually engaging work and always chasing the
-        next level of excellence.
+        I'm Jabari, a developer and designer who builds interactive,
+        high-performing web experiences from the ground up. I care about both
+        the code under the hood and the details users actually see and feel.
       </p>
       <p className="font-light mt-5 met opacity-50 text-[3vw] md:text-lg lg:text-xl xl:text-2xl">
         Meticulously crafting
       </p>
       <p className="font-light opacity-50 vis text-[3vw] md:text-lg lg:text-xl xl:text-2xl pb-5">
-        (Vision) → (Concept) → (Composition) → (Refinement) → (Delivery)
+        (Concept) → (Architecture) → (Build) → (Polish) → (Ship)
       </p>
     </div>
   );

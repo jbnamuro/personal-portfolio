@@ -120,7 +120,7 @@ const Footer = () => {
         },
       });
     },
-    { dependencies: [font], scope: footerRef }
+    { dependencies: [font], scope: footerRef },
   );
   return (
     <div id="contact" ref={footerRef}>
@@ -195,7 +195,7 @@ const Footer = () => {
         </div>
         <div className="flex text-lg md:text-xl lg:text-2xl xl:text-3xl justify-between opacity-50">
           <p>JN</p>
-          <p>&copy;2025</p>
+          <p>&copy;2026</p>
         </div>
       </div>
     </div>

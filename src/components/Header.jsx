@@ -195,7 +195,7 @@ const Header = () => {
                 (Philosophy)
               </p>
               <h3 className="text-[6vh]/[7vh] font-medium">
-                Purposeful <br /> Design <br /> Beautiful <br /> Aesthetics
+                Built to <br /> Perform <br /> Designed to <br /> Impress
               </h3>
             </div>
             <div className="w-full bg-white h-[1px] opacity-50"></div>

@@ -88,7 +88,7 @@ const Landing = () => {
               <p className="text-[3.5vw]/[3.5vw] md:text-xl">Based in Canada</p>
             </div>
             <div>
-              <p>Digital Developer/Designer</p>
+              <p>Full Stack Developer</p>
               <div className="relative w-fit">
                 <h1 className="font-medium text-nowrap text-[7.5vw]/[7.5vw] md:text-6xl">
                   Purposeful Design <br />
