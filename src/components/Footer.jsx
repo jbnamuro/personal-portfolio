@@ -162,7 +162,7 @@ const Footer = () => {
                 Connect (2)
               </p>
               <a
-                href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/"
+                href="https://www.linkedin.com/in/jabarinamuro/"
                 target="_blank"
               >
                 LinkedIn

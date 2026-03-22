@@ -17,9 +17,9 @@ const Projects = () => {
   return (
     <div className="h-fit-content w-full bg-black text-white overflow-hidden">
       <div className="boxes flex">
-        <Project title="Project 1" description="Description of Project 1" />
-        <Project title="Project 2" description="Description of Project 2" />
-        <Project title="Project 3" description="Description of Project 3" />
+        <Project title="Project 1" description="Description of Project 1" image="/thingy.svg"/>
+        <Project title="Project 2" description="Description of Project 2" image="/thingy.svg"/>
+        <Project title="Project 3" description="Description of Project 3" image="/thingy.svg"/>
       </div>
     </div>
   );
