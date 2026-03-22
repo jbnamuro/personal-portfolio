@@ -2,13 +2,10 @@
 A modern, high-performance portfolio showcasing frontend expertise. Built with React and GSAP, featuring fluid transitions, full SEO optimization, and PWA capabilities.
 
 ✨ Technologies
-React
-
-GSAP (Animations)
-
-Tailwind CSS
-
-Vite
+-React
+-GSAP (Animations)
+-Tailwind CSS
+-Vite
 
 🚀 Features
 Smooth Motion: GSAP-powered page transitions and interactions.
