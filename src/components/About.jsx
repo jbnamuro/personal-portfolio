@@ -90,8 +90,8 @@ const About = () => {
       </div>
       <p className="pt-[28px] md:pt-[30px] lg:pt-[34px] xl:pt-[40px] abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
         I'm Jabari, a developer and designer who builds interactive,
-        high-performing web experiences from the ground up. I care about both
-        the code under the hood and the details users actually see and feel.
+        high-performing programs from the ground up. I care about both the code
+        under the hood and the details users actually see and feel.
       </p>
       <p className="font-light mt-5 met opacity-50 text-[3vw] md:text-lg lg:text-xl xl:text-2xl">
         Meticulously crafting
