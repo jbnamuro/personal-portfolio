@@ -45,7 +45,7 @@ const Router = () => {
               <Transition>
                 <Learn
                   title="Computer Vision"
-                  role="GUI Development & Collaborative Backend"
+                  role="Full GUI & Collaborative Backend"
                   description="A computer vision capstone (COMP 4990) with three core capabilities. Object Detection uses YOLOv8 (yolov8n.pt) to detect and classify objects in video frames in real time, drawing bounding boxes and confidence scores directly onto the feed. Object Tracking extends this by following detected objects across consecutive frames using a dedicated tracker, allowing the system to maintain identities over time. 3D Point Cloud Reconstruction processes paired RGB-D datasets in TUM Freiburg benchmark format, combining color images, depth maps, camera intrinsics, and pose data to generate navigable 3D point clouds. Input sources include local video files, live RTSP streams, and RGB-D image datasets. The entire pipeline is controlled through a browser-based interface built with NiceGUI, where users can configure settings, watch live-annotated video output, and trigger point cloud generation on demand. Built collaboratively with Liam Mackenzie and Haydar Beydoun."
                   video=""
                   link="https://github.com/mackLiam/Comp_4990"

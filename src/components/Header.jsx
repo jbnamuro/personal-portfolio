@@ -227,7 +227,7 @@ const Header = () => {
                       scrollToSection("offers");
                     }}
                   >
-                    Offers
+                    Skills
                   </p>
                   <p
                     className="cursor-pointer"
@@ -240,27 +240,20 @@ const Header = () => {
                 </div>
                 <div className=" connect">
                   <p className="opacity-50 text-[2vh]/[3vh] font-light">
-                    Projects <span className="text-bright-red">(3)</span>
+                    Projects <span className="text-bright-red">(4)</span>
                   </p>
-                  {/* <Link
-              to="/learnWBS"
-              className="link1 h-full absolute top-0 left-0 w-full z-100"
-            ></Link>
-            <Link
-              to="/learnExperiment"
-              className="link2 h-full absolute top-0 left-0 w-full hidden z-100"
-            ></Link>
-            <Link
-              to="/learnPortfolio"
-              className="link3 h-full absolute top-0 left-0 w-full hidden z-100"
-            ></Link> */}
                   <div className="flex flex-col">
-                    <Link to="/learnCafe" className="">
-                      Corner Coffee
+                    <Link to="/learnCV" className="mb-[1vh]">
+                      Computer Vision
                     </Link>
-                    <Link to="/learnWBS">WBS</Link>
-                    <Link to="/learnExperiment" className=" mb-[1vh]">
-                      Experiment
+                    <Link to="/learnPetSystem" className="mb-[1vh]">
+                      PetSystem
+                    </Link>
+                    <Link to="/learnPortfolio" className="mb-[1vh]">
+                      Personal Portfolio
+                    </Link>
+                    <Link to="/learnCafe">
+                      Corner Coffee
                     </Link>
                   </div>
                 </div>
