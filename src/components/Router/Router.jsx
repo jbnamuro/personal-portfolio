@@ -60,7 +60,7 @@ const Router = () => {
               <Transition>
                 <Learn
                   title="PetSystem"
-                  role="Full UI & Collaborative Backend"
+                  role="Full GUI & Collaborative Backend"
                   description="PetSystem is a full-stack pet adoption platform built with Flask and MySQL, designed around three distinct user roles. Customers can browse a live inventory filtered by species, rarity, maintenance level, and price, add pets to a shopping cart, and complete a secure checkout that automatically calculates a 13% tax. Staff members have access to a dedicated inventory dashboard with full CRUD operations to add, update, and remove pets from the catalog. Admins hold oversight over the entire platform, with tools to manage user accounts and review global order history. A core design decision was to push complex logic directly into the database. MySQL Stored Procedures handle transaction-safe checkouts and multi-parameter filtering, keeping the Python layer clean and the database authoritative. The UI is built with Jinja2 templates and custom CSS, designed around a clean, dashboard structured workflow. Built collaboratively by Jabari Namuro, Haydar Beydoun, Raad Islam, and Zakaria Hussein."
                   video=""
                   link="https://github.com/jbnamuro/PetSystem"
