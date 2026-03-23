@@ -95,7 +95,7 @@ const Header = () => {
             duration: 0.8,
             ease: "power2.out",
           },
-          "-=0.5"
+          "-=0.5",
         );
         opentl.from(
           navigate.words,
@@ -108,7 +108,7 @@ const Header = () => {
             duration: 0.8,
             ease: "power4.out",
           },
-          "<"
+          "<",
         );
         opentl.from(
           connect.words,
@@ -121,7 +121,7 @@ const Header = () => {
             duration: 0.8,
             ease: "power4.out",
           },
-          "<"
+          "<",
         );
         opentl.from(
           hello.words,
@@ -134,7 +134,7 @@ const Header = () => {
             duration: 0.8,
             ease: "power4.out",
           },
-          "<"
+          "<",
         );
       }
       if (!menu) {
@@ -153,7 +153,7 @@ const Header = () => {
         });
       }
     },
-    { dependencies: [menu, font], scope: menuCont }
+    { dependencies: [menu, font], scope: menuCont },
   );
 
   // Cleanup SplitText instances on unmount
@@ -167,7 +167,7 @@ const Header = () => {
         });
       };
     },
-    { scope: menuCont }
+    { scope: menuCont },
   );
 
   return (
@@ -203,7 +203,7 @@ const Header = () => {
               <div className="flex">
                 <div className="navigate w-1/2">
                   <p className="opacity-50 text-[2vh]/[3vh] font-light">
-                    Navigate (04)
+                    Navigate <span className="text-bright-red">(04)</span>
                   </p>
                   <p
                     className="cursor-pointer mb-[1vh]"
@@ -240,7 +240,7 @@ const Header = () => {
                 </div>
                 <div className=" connect">
                   <p className="opacity-50 text-[2vh]/[3vh] font-light">
-                    Projects (3)
+                    Projects <span className="text-bright-red">(3)</span>
                   </p>
                   {/* <Link
               to="/learnWBS"
@@ -258,9 +258,7 @@ const Header = () => {
                     <Link to="/learnCafe" className="">
                       Corner Coffee
                     </Link>
-                    <Link to="/learnWBS" className="mb-[1vh]">
-                      WBS
-                    </Link>
+                    <Link to="/learnWBS">WBS</Link>
                     <Link to="/learnExperiment" className=" mb-[1vh]">
                       Experiment
                     </Link>
@@ -270,7 +268,7 @@ const Header = () => {
               </div>
               <div className="hello">
                 <p className="opacity-50 text-[2vh]/[3vh] font-light">
-                  Say hello (1)
+                  Say hello <span className="text-bright-red">(1)</span>
                 </p>
                 <p className="">jabarinamuro@gmail.com</p>
               </div>

@@ -15,8 +15,8 @@ const About = () => {
         mask: "words",
       });
 
-      gsap.from(abttitle.words, {
-        yPercent: -100,
+      gsap.from([abttitle.words, ".dot-abt"], {
+        yPercent: -300,
         duration: 1,
         ease: "power4.out",
         stagger: 0.05,
@@ -82,9 +82,12 @@ const About = () => {
   );
   return (
     <div id="about" className="bg-black pt-15 relative px-5">
-      <h2 className="ml-5 font-light abt-title top-15 left-0 opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl absolute">
-        (About Me)
-      </h2>
+      <div className="abt-title overflow-hidden flex items-center gap-1 absolute top-15  left-5">
+        <div className="h-2 dot-abt opacity-50 w-2 bg-bright-red rounded-full"></div>
+        <h2 className=" font-light opacity-50 text-lg md:text-xl lg:text-2xl xl:text-3xl">
+          About Me
+        </h2>
+      </div>
       <p className="pt-[28px] md:pt-[30px] lg:pt-[34px] xl:pt-[40px] abt text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-2">
         I'm Jabari, a developer and designer who builds interactive,
         high-performing web experiences from the ground up. I care about both
@@ -94,7 +97,10 @@ const About = () => {
         Meticulously crafting
       </p>
       <p className="font-light opacity-50 vis text-[3vw] md:text-lg lg:text-xl xl:text-2xl pb-5">
-        (Concept) → (Architecture) → (Build) → (Polish) → (Ship)
+        (Concept) <span className="text-bright-red font-semibold">→</span>{" "}
+        (Architecture) <span className="text-bright-red font-semibold">→</span>{" "}
+        (Build) <span className="text-bright-red font-semibold">→</span>{" "}
+        (Polish) <span className="text-bright-red font-semibold">→</span> (Ship)
       </p>
     </div>
   );

@@ -16,7 +16,7 @@ const Offers = () => {
         SplitText.create(select, {
           type: "lines",
           mask: "lines",
-        })
+        }),
       );
 
       const pselectors = [".p1", ".p2", ".p3"];
@@ -78,7 +78,7 @@ const Offers = () => {
       });
     },
     // },
-    { dependencies: [font] }
+    { dependencies: [font] },
   );
   return (
     <div
@@ -93,7 +93,7 @@ const Offers = () => {
             </p>
             <h2 className="text-[4vh]/[5vh] ">Website Development</h2>
           </div>
-          <p>N/01</p>
+          <p className="text-bright-red opacity-50">N/01</p>
         </div>
         <div className="mt-5 desc-web p1">
           <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
@@ -114,7 +114,7 @@ const Offers = () => {
             </p>
             <h2 className="text-[4vh]/[5vh]">UI/UX Design</h2>
           </div>
-          <p>N/02</p>
+          <p className="text-bright-red opacity-50">N/02</p>
         </div>
         <div className="mt-5 desc-uiux p2">
           <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
@@ -135,7 +135,7 @@ const Offers = () => {
             </p>
             <h2 className="text-[4vh]/[5vh]">Full-Stack Development</h2>
           </div>
-          <p>N/03</p>
+          <p className="text-bright-red opacity-50">N/03</p>
         </div>
         <div className="mt-5 desc-branding p3">
           <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
@@ -143,7 +143,8 @@ const Offers = () => {
           </p>
           <p className="font-light text-[2.5vh]">
             I build complete, end-to-end solutions — bringing together solid
-            engineering and polished design to ship products that work and look great.
+            engineering and polished design to ship products that work and look
+            great.
           </p>
         </div>
       </div>

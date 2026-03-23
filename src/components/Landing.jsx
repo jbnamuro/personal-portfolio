@@ -75,7 +75,7 @@ const Landing = () => {
         });
       }
     },
-    { scope: homeRef.current, dependencies: [font] }
+    { scope: homeRef.current, dependencies: [font] },
   );
   return (
     <div ref={homeRef}>
@@ -95,7 +95,7 @@ const Landing = () => {
                   Beautiful Aesthetics
                 </h1>
                 <img
-                  src="/flower.svg"
+                  src="/flower-red.svg"
                   className="absolute right-[2.5vw] -top-[1vw] md:right-[25px] md:-top-[10px] max-w-[25px] w-[3.5vw]"
                 />
               </div>

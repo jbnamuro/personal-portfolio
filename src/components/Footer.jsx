@@ -130,7 +130,7 @@ const Footer = () => {
           <div className="flex justify-between">
             <div className="navigate">
               <p className="opacity-50 text-[3vh] text-nowrap font-light">
-                Navigate (04)
+                Navigate <span className="text-bright-red">(4)</span>
               </p>
               <p
                 className="cursor-pointer"
@@ -159,10 +159,10 @@ const Footer = () => {
             </div>
             <div className="connect">
               <p className="opacity-50 text-[3vh] text-nowrap font-light">
-                Connect (2)
+                Connect <span className="text-bright-red">(2)</span>
               </p>
               <a
-                href="https://www.linkedin.com/in/jabari-namuro-1b35ab2b9/"
+                href="https://www.linkedin.com/in/jabarinamuro/"
                 target="_blank"
               >
                 LinkedIn
@@ -176,19 +176,19 @@ const Footer = () => {
           </div>
           <div className="mt-5 available">
             <p className="opacity-50 text-[3vh] text-nowrap font-light">
-              Available (2)
+              Available <span className="text-bright-red">(2)</span>
             </p>
             <p>Freelance/Hire</p>
           </div>
           <div className="mt-5 location">
             <p className="opacity-50 text-[3vh] text-nowrap font-light">
-              Location (1)
+              Location <span className="text-bright-red">(1)</span>
             </p>
             <p>Toronto, Canada</p>
           </div>
           <div className="mt-5 hello">
             <p className="opacity-50 text-[3vh] text-nowrap font-light">
-              Say hello (1)
+              Say hello <span className="text-bright-red">(1)</span>
             </p>
             <p>jabarinamuro@gmail.com</p>
           </div>
