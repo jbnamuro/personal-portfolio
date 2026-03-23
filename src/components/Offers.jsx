@@ -89,19 +89,18 @@ const Offers = () => {
         <div className="flex justify-between items-center">
           <div className="title-web">
             <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
-              (Offer)
+              (Skill)
             </p>
-            <h2 className="text-[4vh]/[5vh] ">Website Development</h2>
+            <h2 className="text-[4vh]/[5vh] ">Tools & Technologies</h2>
           </div>
           <p className="text-bright-red opacity-50">N/01</p>
         </div>
         <div className="mt-5 desc-web p1">
-          <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
-            (Description)
-          </p>
+          <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">(Stack)</p>
           <p className="text-[2.5vh] font-light">
-            I provide professional, functional website development tailored to
-            help elevate your business to the next level.
+            Frontend: React, JavaScript, HTML, CSS/SCSS, GSAP. Backend: Python,
+            Flask, Java, C++, SQL. Specialized: OpenCV, YOLOv8. Tools: Git, VS
+            Code, Figma.
           </p>
         </div>
       </div>
@@ -110,9 +109,9 @@ const Offers = () => {
         <div className="flex justify-between items-center">
           <div className="title-uiux">
             <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
-              (Offer)
+              (Skill)
             </p>
-            <h2 className="text-[4vh]/[5vh]">UI/UX Design</h2>
+            <h2 className="text-[4vh]/[5vh]">Computer Science Fundamentals</h2>
           </div>
           <p className="text-bright-red opacity-50">N/02</p>
         </div>
@@ -121,8 +120,9 @@ const Offers = () => {
             (Description)
           </p>
           <p className="text-[2.5vh] font-light">
-            I craft elegant and practical UI/UX designs that seamlessly align
-            with each client's vision and user needs.
+            Strong background in OOP, data structures, algorithms, and software
+            testing. Comfortable with design patterns, complexity analysis, and
+            writing code that is readable and maintainable.
           </p>
         </div>
       </div>
@@ -131,7 +131,7 @@ const Offers = () => {
         <div className="flex justify-between items-center">
           <div className="title-branding">
             <p className="opacity-50 text-[1.5vh]/[1.5vh] font-light">
-              (Offer)
+              (Skill)
             </p>
             <h2 className="text-[4vh]/[5vh]">Full-Stack Development</h2>
           </div>
@@ -142,9 +142,9 @@ const Offers = () => {
             (Description)
           </p>
           <p className="font-light text-[2.5vh]">
-            I build complete, end-to-end solutions — bringing together solid
-            engineering and polished design to ship products that work and look
-            great.
+            I work across the full stack, connecting backend logic to polished
+            frontends and shipping products that are both solid under the hood
+            and great to use.
           </p>
         </div>
       </div>
