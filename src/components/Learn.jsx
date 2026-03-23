@@ -31,14 +31,12 @@ const Learn = (props) => {
               <p className="opacity-50 text-[2vw]/[2.5vw] lg:text-2xl font-light">
                 (Role)
               </p>
-              <p className="text-[3vw]/[3vw] mt-2 lg:text-4xl">
-                UI/UX & Development
-              </p>
+              <p className="text-[3vw]/[3vw] mt-2 lg:text-4xl">{props.role}</p>
             </div>
           </div>
 
-          <div className="absolute p-5 bottom-0 left-0 mt-20 flex desc-web">
-            <div className="min-w-[30%] overflow-hidden">
+          <div className="absolute p-5 bottom-0 left-0 mt-20 flex desc-web w-full">
+            {/* <div className="min-w-[30%] overflow-hidden">
               <p className="opacity-50 text-[2vw]/[2vw] lg:text-2xl font-light">
                 (Video)
               </p>
@@ -51,13 +49,13 @@ const Learn = (props) => {
                 preload="none"
                 className="mt-5 max-h-100 w-[100%] max-w-100"
               />
-            </div>
-            <div className="min-w-[70%] pl-4 flex flex-col justify-between">
+            </div> */}
+            <div className="w-full pl-4 flex flex-col justify-between">
               <div>
                 <p className="opacity-50 lg:text-2xl mb-2 text-[2vw]/[2vw] font-light">
                   (Description)
                 </p>
-                <p className="text-[3vw]/[3.5vw] lg:text-4xl font-light">
+                <p className="text-[2vw]/[2.5vw] lg:text-xl font-light">
                   {props.description}
                   {/* A clean, straightforward website built for a Toronto-based
                         waterproofing company, focusing on clarity, ease of navigation, and
@@ -94,7 +92,7 @@ const Learn = (props) => {
           <p className="opacity-50 text-[2vh]/[2vh] font-light">
             (Description)
           </p>
-          <p className="text-[4vh]/[4.5vh] font-light">
+          <p className="text-[3.5vh]/[4vh] font-light">
             {props.description}
             {/* A clean, straightforward website built for a Toronto-based
                 waterproofing company, focusing on clarity, ease of navigation, and
@@ -115,10 +113,10 @@ const Learn = (props) => {
         </a>
         <div>
           <p className="mt-10 opacity-50 text-[2vh]/[2vh] font-light">(Role)</p>
-          <p className="text-[5vh]/[5.5vh]">UI/UX & Development</p>
+          <p className="text-[5vh]/[5.5vh]">{props.role}</p>
         </div>
         <div className="flex items-center flex-col">
-          <div>
+          {/* <div>
             <p className="mt-5 opacity-50 text-[2vh]/[2vh] font-light">
               (Video)
             </p>
@@ -131,7 +129,7 @@ const Learn = (props) => {
               preload="none"
               className="mt-2"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
