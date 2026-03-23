@@ -1,4 +1,4 @@
-const CACHE_NAME = "jabari-portfolio-v1";
+const CACHE_NAME = "jabari-portfolio-v2";
 const urlsToCache = [
   "/",
   "/index.html",

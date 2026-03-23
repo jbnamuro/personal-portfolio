@@ -7,7 +7,7 @@ const Project = (props) => {
   useGSAP(() => {}, []);
 
   return (
-    <div className="border-r-1 relative testing border-y-1 border-[rgba(255,255,255,0.3)] group hover:bg-white hover:text-black ease-in duration-150 h-150 min-w-100 2xl:min-w-1/4 flex flex-col justify-center items-center">
+    <div className="border-r-1 relative testing border-y-1 border-[rgba(255,255,255,0.3)] group hover:bg-white hover:text-black ease-in duration-150 h-150 min-w-full min-[401px]:min-w-100 2xl:min-w-1/4 flex flex-col justify-center items-center">
       <div className="h-1/2 flex justify-center w-full items-center">
         <img
           src={props.image}
