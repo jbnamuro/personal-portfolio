@@ -12,7 +12,7 @@ const Project = (props) => {
         <img
           src={props.image}
           alt={props.title}
-          className="invert group-hover:invert-0 w-1/4"
+          className="group-hover:invert w-1/4"
         />
       </div>
       <div className=" w-full px-5 h-1/2 py-5 flex flex-col justify-between">

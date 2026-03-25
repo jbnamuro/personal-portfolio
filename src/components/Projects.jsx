@@ -14,7 +14,7 @@ const projects = [
     description:
       "Real time object detection & tracking using YOLOv8, plus 3D point cloud reconstruction from RGB-D video. Supports live RTSP streams, local video, and TUM benchmark datasets. Browser-based UI built with NiceGUI.",
     tags: ["Python", "YOLOv8", "NiceGUI", "OpenCV", "RGB-D"],
-    image: "/thingy.svg",
+    image: "/eyeLogo.svg",
     link: "/learnCV",
   },
   {
@@ -23,7 +23,7 @@ const projects = [
     description:
       "Role based pet adoption platform with smart filtering by species, rarity, and price. Features secure dashboards for Customers, Staff, and Admins, a shopping cart with tax calculation, full inventory CRUD, and complex logic handled via MySQL Stored Procedures.",
     tags: ["Flask", "MySQL", "Jinja2", "Stored Procedures", "CSS"],
-    image: "/thingy.svg",
+    image: "/paw.svg",
     link: "/learnPetSystem",
   },
   {
@@ -32,7 +32,7 @@ const projects = [
     description:
       "This site. Built with React, GSAP for animations, and Tailwind CSS for styling. Vite powers the build, with page transitions handled via React Router and GSAP, and SEO covered through meta tags, JSON-LD schema, and a sitemap.",
     tags: ["React", "GSAP", "Tailwind CSS", "Vite"],
-    image: "/thingy.svg",
+    image: "/folder.svg",
     link: "/learnPortfolio",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     description:
       "A cafe website example build with smooth animations and a unique design.",
     tags: ["React", "JavaScript", "Tailwind CSS", "GSAP"],
-    image: "/thingy.svg",
+    image: "/cup.svg",
     link: "/learnCafe",
   },
 ];
