@@ -199,7 +199,7 @@ const Header = () => {
               </h3>
             </div>
             <div className="w-full bg-white h-[1px] opacity-50"></div>
-            <div className="h-3/5 text-[min(8vw,4vh)] mt-2 flex flex-col justify-around">
+            <div className="h-3/5 md:text-[4vh] text-[6vw] mt-2 flex flex-col justify-around">
               <div className="flex">
                 <div className="navigate w-1/2">
                   <p className="opacity-50 text-[2vh]/[3vh] font-light">
@@ -250,11 +250,9 @@ const Header = () => {
                       PetSystem
                     </Link>
                     <Link to="/learnPortfolio" className="mb-[1vh]">
-                      Personal Portfolio
+                      Portfolio
                     </Link>
-                    <Link to="/learnCafe">
-                      Corner Coffee
-                    </Link>
+                    <Link to="/learnCafe">Corner Coffee</Link>
                   </div>
                 </div>
                 <div className="pointer-events-none"></div>

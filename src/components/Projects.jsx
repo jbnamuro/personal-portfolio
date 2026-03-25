@@ -110,8 +110,8 @@ const Projects = () => {
       className="h-fit-content w-full bg-black text-white overflow-hidden"
     >
       <div className="px-5 py-10 flex justify-between items-center">
-        <h1 className="text-4xl selected">Selected Works</h1>
-        <div className="flex gap-5 2xl:hidden">
+        <h1 className="sm:text-4xl text-2xl selected">Selected Works</h1>
+        <div className="flex gap-2 2xl:hidden">
           <div
             onClick={() => slider("prev")}
             className="bg-bright-red cursor-pointer opacity-50 flex hover:opacity-100 duration-150 ease-in justify-center items-center h-10 w-10 rounded-full"

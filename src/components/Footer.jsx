@@ -124,12 +124,12 @@ const Footer = () => {
   );
   return (
     <div id="contact" ref={footerRef}>
-      <div className="h-svh bg-black px-5 pb-5 text-[4vh] footer flex flex-col justify-between">
+      <div className="h-svh bg-black px-5 pb-5 md:text-[4vh] text-[6vw] footer flex flex-col justify-between">
         <div className="h-[1px] line-anim w-[0%] bg-white opacity-50"></div>
         <div className="">
           <div className="flex justify-between">
             <div className="navigate">
-              <p className="opacity-50 text-[3vh] text-nowrap font-light">
+              <p className="opacity-50 md:text-[3vh] text-[5vw] text-nowrap font-light">
                 Navigate <span className="text-bright-red">(4)</span>
               </p>
               <p
@@ -158,7 +158,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="connect">
-              <p className="opacity-50 text-[3vh] text-nowrap font-light">
+              <p className="opacity-50 md:text-[3vh] text-[5vw] text-nowrap font-light">
                 Connect <span className="text-bright-red">(2)</span>
               </p>
               <a
@@ -175,19 +175,19 @@ const Footer = () => {
             <div className="pointer-events-none"></div>
           </div>
           <div className="mt-5 available">
-            <p className="opacity-50 text-[3vh] text-nowrap font-light">
+            <p className="opacity-50 md:text-[3vh] text-[5vw] text-nowrap font-light">
               Available <span className="text-bright-red">(2)</span>
             </p>
             <p>Freelance/Hire</p>
           </div>
           <div className="mt-5 location">
-            <p className="opacity-50 text-[3vh] text-nowrap font-light">
+            <p className="opacity-50 md:text-[3vh] text-[5vw] text-nowrap font-light">
               Location <span className="text-bright-red">(1)</span>
             </p>
             <p>Toronto, Canada</p>
           </div>
           <div className="mt-5 hello">
-            <p className="opacity-50 text-[3vh] text-nowrap font-light">
+            <p className="opacity-50 md:text-[3vh] text-[5vw] text-nowrap font-light">
               Say hello <span className="text-bright-red">(1)</span>
             </p>
             <p>jabarinamuro@gmail.com</p>

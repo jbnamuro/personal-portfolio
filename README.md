@@ -1,5 +1,5 @@
 🎨 Personal Portfolio
-A modern, high-performance portfolio showcasing frontend expertise. Built with React and GSAP, featuring fluid transitions, full SEO optimization.
+A modern, high-performance portfolio showcasing fullstack expertise. Built with React and GSAP, featuring fluid transitions, full SEO optimization.
 
 ✨ Technologies
 
