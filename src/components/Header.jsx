@@ -246,13 +246,15 @@ const Header = () => {
                     <Link to="/learnCV" className="mb-[1vh]">
                       Computer Vision
                     </Link>
+                    <Link to="/learnStretch" className="mb-[1vh]">
+                      S-Tracker
+                    </Link>
                     <Link to="/learnPetSystem" className="mb-[1vh]">
                       PetSystem
                     </Link>
                     <Link to="/learnPortfolio" className="mb-[1vh]">
                       Portfolio
                     </Link>
-                    <Link to="/learnCafe">Corner Coffee</Link>
                   </div>
                 </div>
                 <div className="pointer-events-none"></div>
