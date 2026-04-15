@@ -49,7 +49,7 @@ const Router = () => {
                   description="A computer vision capstone (COMP 4990) with three core capabilities. Object Detection uses YOLOv8 (yolov8n.pt) to detect and classify objects in video frames in real time, drawing bounding boxes and confidence scores directly onto the feed. Object Tracking extends this by following detected objects across consecutive frames using a dedicated tracker, allowing the system to maintain identities over time. 3D Point Cloud Reconstruction processes paired RGB-D datasets in TUM Freiburg benchmark format, combining color images, depth maps, camera intrinsics, and pose data to generate navigable 3D point clouds. Input sources include local video files, live RTSP streams, and RGB-D image datasets. The entire pipeline is controlled through a browser-based interface built with NiceGUI, where users can configure settings, watch live-annotated video output, and trigger point cloud generation on demand. Built collaboratively with Liam Mackenzie and Haydar Beydoun."
                   video=""
                   link="https://github.com/mackLiam/Comp_4990"
-                  next="/learnPetSystem"
+                  next="/learnStretch"
                 />
               </Transition>
             }
@@ -64,7 +64,7 @@ const Router = () => {
                   description="A full-stack stretching tracker built with React and Express.js, designed to help users build consistent flexibility routines. The calendar view lets users log daily sessions and visualize streaks over time, while custom stretch creation allows users to define their own exercises with targeted muscle groups and hold durations. Saved routines support grouping stretches into reusable sequences that persist across sessions through full account-based storage. AI-powered routine generation leverages the Anthropic API to suggest personalized stretching plans based on user goals and history. Authentication is handled through JWT session tokens and bcrypt password hashing, with all user data stored in a normalized PostgreSQL schema hosted on Neon and accessed through Prisma ORM."
                   video=""
                   link="https://github.com/jbnamuro/stretching-tracker"
-                  next="/learnCafe"
+                  next="/learnPetsystem"
                 />
               </Transition>
             }
@@ -94,7 +94,7 @@ const Router = () => {
                   description="This portfolio was built with a focus on motion and feel rather than static presentation. React handles the component architecture, while GSAP drives all animations, from scroll-triggered text reveals using SplitText to page transitions orchestrated between React Router navigation events. Tailwind CSS keeps styling fast and consistent, and Vite provides near-instant development builds. Smooth scrolling is handled through Lenis, synced directly with GSAP's ticker for frame-perfect easing. On the SEO side, the site includes structured meta tags, a JSON-LD schema, a generated sitemap, and a robots.txt, alongside a registered service worker for offline capability. The goal was a portfolio that feels alive, where the animations serve the content rather than distract from it."
                   video=""
                   link="https://github.com/jbnamuro/personal-portfolio"
-                  next="/learnCafe"
+                  next="/learnCV"
                 />
               </Transition>
             }
