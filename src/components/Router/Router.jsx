@@ -55,6 +55,21 @@ const Router = () => {
             }
           />
           <Route
+            path="learnStretch"
+            element={
+              <Transition>
+                <Learn
+                  title="Stretching Daily Tracker"
+                  role="Solo Full-Stack Developer"
+                  description="A full-stack stretching tracker built with React and Express.js, designed to help users build consistent flexibility routines. The calendar view lets users log daily sessions and visualize streaks over time, while custom stretch creation allows users to define their own exercises with targeted muscle groups and hold durations. Saved routines support grouping stretches into reusable sequences that persist across sessions through full account-based storage. AI-powered routine generation leverages the Anthropic API to suggest personalized stretching plans based on user goals and history. Authentication is handled through JWT session tokens and bcrypt password hashing, with all user data stored in a normalized PostgreSQL schema hosted on Neon and accessed through Prisma ORM."
+                  video=""
+                  link="https://github.com/jbnamuro/stretching-tracker"
+                  next="/learnCafe"
+                />
+              </Transition>
+            }
+          />
+          <Route
             path="learnPetSystem"
             element={
               <Transition>

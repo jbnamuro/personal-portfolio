@@ -18,6 +18,15 @@ const projects = [
     link: "/learnCV",
   },
   {
+    id: 5,
+    title: "Stretching Daily Tracker",
+    description:
+      "Full-stack stretching tracker with calendar progress tracking, custom stretch creation, saved routines with account persistence. AI-powered routine generation, secured with JWT sessions and bcrypt hashing. PostgreSQL database managed through Prisma ORM.",
+    tags: ["React", "Express.js", "PostgreSQL", "Prisma", "Anthropic API"],
+    image: "/stretch.svg",
+    link: "/learnStretch",
+  },
+  {
     id: 2,
     title: "PetSystem",
     description:
@@ -35,15 +44,15 @@ const projects = [
     image: "/folder.svg",
     link: "/learnPortfolio",
   },
-  {
-    id: 4,
-    title: "Cafe Website",
-    description:
-      "A cafe website example build with smooth animations and a unique design.",
-    tags: ["React", "JavaScript", "Tailwind CSS", "GSAP"],
-    image: "/cup.svg",
-    link: "/learnCafe",
-  },
+  // {
+  //   id: 4,
+  //   title: "Cafe Website",
+  //   description:
+  //     "A cafe website example build with smooth animations and a unique design.",
+  //   tags: ["React", "JavaScript", "Tailwind CSS", "GSAP"],
+  //   image: "/cup.svg",
+  //   link: "/learnCafe",
+  // },
 ];
 
 let runningAnimation = false;
